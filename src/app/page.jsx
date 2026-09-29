@@ -111,19 +111,19 @@ export default function HomePage() {
               Accede a más de <strong>35.000 canales en directo en 4K / Full HD</strong> sin cortes mediante nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción IPTV</Link>, junto a más de <strong>120.000 películas y series VOD</strong>. Todo el deporte y cine en tu <Link href="/instalacion/samsung-smart-tv" className="text-gray-200 underline decoration-white/30 hover:text-white">Smart TV</Link>, <Link href="/instalacion/fire-tv-stick" className="text-gray-200 underline decoration-white/30 hover:text-white">Fire Stick</Link> o <Link href="/dispositivos" className="text-spanish-gold hover:underline">dispositivos compatibles</Link>.
             </p>
 
-            {/* CTAs */}
+            {/* CTAs with animated effects */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <a
                 href="#planes"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-extrabold text-white bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red shadow-glow-red hover:shadow-lg transition-all duration-200 group"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-extrabold text-white bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red shadow-glow-red hover:shadow-2xl btn-shine btn-glow-pulse btn-interactive group cursor-pointer"
               >
                 <span>Ver planes y ofertas</span>
-                <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1.5" />
               </a>
 
               <Link
                 href="/contacto?plan=prueba-gratis"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-dark-900/80 hover:bg-dark-800 backdrop-blur-md border border-white/15 hover:border-spanish-gold/40 hover:text-white transition-all duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-dark-900/80 hover:bg-dark-800 backdrop-blur-md border border-white/15 hover:border-spanish-gold/60 btn-secondary-glow cursor-pointer"
               >
                 <span>Solicitar prueba gratis</span>
               </Link>
@@ -643,13 +643,13 @@ export default function HomePage() {
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#planes"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-extrabold text-white bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red shadow-glow-red hover:shadow-xl transition-all"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-extrabold text-white bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red shadow-glow-red hover:shadow-2xl btn-shine btn-glow-pulse btn-interactive cursor-pointer"
             >
               Ver planes y suscribirse
             </a>
             <Link
               href="/contacto"
-              className="w-full sm:w-auto px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-white/5 hover:bg-white/10 border border-white/10 transition-all"
+              className="w-full sm:w-auto px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-white/5 hover:bg-white/10 border border-white/10 btn-secondary-glow cursor-pointer"
             >
               Contactar con un asesor
             </Link>

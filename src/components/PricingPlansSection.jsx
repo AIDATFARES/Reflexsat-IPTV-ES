@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { deviceTiers } from '../data/pricingData';
 import PricingCard from './PricingCard';
-import { Tv, Smartphone, Monitor } from 'lucide-react';
 
 export default function PricingPlansSection({ defaultDevices = 1 }) {
   const [selectedDevices, setSelectedDevices] = useState(defaultDevices);
@@ -23,9 +22,9 @@ export default function PricingPlansSection({ defaultDevices = 1 }) {
                 key={tier.devices}
                 type="button"
                 onClick={() => setSelectedDevices(tier.devices)}
-                className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap flex items-center gap-2 cursor-pointer ${
+                className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap flex items-center gap-2 cursor-pointer btn-interactive ${
                   isActive
-                    ? 'bg-gradient-to-r from-spanish-red to-spanish-redBright text-white shadow-glow-red scale-100'
+                    ? 'bg-gradient-to-r from-spanish-red to-spanish-redBright text-white shadow-glow-red scale-105 z-10'
                     : 'text-gray-400 hover:text-white hover:bg-white/5'
                 }`}
               >
@@ -42,8 +41,11 @@ export default function PricingPlansSection({ defaultDevices = 1 }) {
         </p>
       </div>
 
-      {/* Pricing Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+      {/* Pricing Cards Grid with smooth transition on tab change */}
+      <div
+        key={selectedDevices}
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto pricing-grid-anim"
+      >
         {currentTier.plans.map((plan) => (
           <PricingCard key={plan.id} plan={plan} />
         ))}

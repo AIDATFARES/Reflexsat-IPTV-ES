@@ -82,10 +82,10 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-4">
             <Link
               href="/planes"
-              className="relative inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white transition-all bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red rounded-xl shadow-glow-red hover:shadow-lg hover:shadow-spanish-red/50 hover:-translate-y-0.5"
+              className="relative inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red rounded-xl shadow-glow-red hover:shadow-lg btn-shine btn-interactive cursor-pointer group"
             >
               <span>Ver planes</span>
-              <ChevronRight className="w-4 h-4 ml-1" />
+              <ChevronRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
 
