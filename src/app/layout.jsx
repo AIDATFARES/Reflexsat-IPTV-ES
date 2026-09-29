@@ -10,7 +10,7 @@ export const metadata = {
     template: '%s | Reflexsat IPTV España',
   },
   description:
-    'Suscripción IPTV Premium en España con más de 35.000 canales en directo 4K/HD, 90.000 películas y series VOD, todo el deporte en directo y activación en 5 minutos. Servidores estables sin cortes. Garantía de 7 días.',
+    'Suscripción IPTV Premium en España con más de 35.000 canales en directo 4K/HD, 120.000 películas y series VOD, todo el deporte en directo y activación en 5 minutos. Servidores estables sin cortes. Garantía de 7 días.',
   keywords: [
     'IPTV España',
     'mejor IPTV España',
@@ -44,7 +44,7 @@ export const metadata = {
     siteName: 'Reflexsat IPTV',
     title: 'Reflexsat IPTV España — Suscripción IPTV Premium 4K Sin Cortes',
     description:
-      'Disfruta de más de 35.000 canales en 4K/HD, fútbol en directo, 90.000 VOD y servidores dedicados en España. Activación en 5 minutos. Garantía 7 días.',
+      'Disfruta de más de 35.000 canales en 4K/HD, fútbol en directo, 120.000 VOD y servidores dedicados en España. Activación en 5 minutos. Garantía 7 días.',
     images: [
       {
         url: '/images/og-image.svg',

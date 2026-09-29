@@ -60,17 +60,19 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="inline-block" aria-label="Reflexsat IPTV">
-              <div className="relative w-48 h-12">
+              <div className="flex items-center">
                 <Image
                   src="/images/logo.svg"
                   alt="Reflexsat IPTV España"
-                  fill
-                  className="object-contain"
+                  width={190}
+                  height={48}
+                  className="w-48 h-auto object-contain"
+                  style={{ width: '190px', height: 'auto', maxHeight: '48px' }}
                 />
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-              Reflexsat IPTV es el servicio de suscripción IPTV premium líder para España y usuarios europeos. Emisión estable en 4K/HD con más de 35.000 canales en directo, fútbol y deporte total, junto a más de 90.000 películas y series VOD sin permanencia.
+              Reflexsat IPTV es el servicio de suscripción IPTV premium líder para España y usuarios europeos. Emisión estable en 4K/HD con más de 35.000 canales en directo, fútbol y deporte total, junto a más de 120.000 películas y series VOD sin permanencia.
             </p>
             <div className="flex items-center gap-2 pt-2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/5 border border-white/10 text-gray-300">

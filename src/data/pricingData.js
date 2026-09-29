@@ -11,7 +11,7 @@ export const singleScreenPlans = [
     devices: '1 Dispositivo simultáneo',
     features: [
       '+35.000 Canales en directo (España, Europa e Internacionales)',
-      '+90.000 Películas y Series en VOD (4K / Full HD)',
+      '+120.000 Películas y Series en VOD (4K / Full HD)',
       'Todo el Deporte en Directo (Fútbol, F1, MotoGP, Baloncesto)',
       'Servidores dedicados con 99.9% de estabilidad',
       'Tecnología Anti-Congelación & Anti-Buffering',
@@ -35,7 +35,7 @@ export const singleScreenPlans = [
     devices: '1 Dispositivo simultáneo',
     features: [
       '+35.000 Canales en directo (España, Europa e Internacionales)',
-      '+90.000 Películas y Series en VOD (4K / Full HD)',
+      '+120.000 Películas y Series en VOD (4K / Full HD)',
       'Todo el Deporte en Directo (LaLiga, Champions, Fórmula 1)',
       'Servidores dedicados ultra rápidos con CDN española',
       'Tecnología Anti-Congelación avanzada',
@@ -60,7 +60,7 @@ export const singleScreenPlans = [
     devices: '1 Dispositivo simultáneo',
     features: [
       '+35.000 Canales en directo en máxima resolución 4K / UHD / FHD',
-      '+90.000 Películas y Series en VOD con estrenos semanales',
+      '+120.000 Películas y Series en VOD con estrenos semanales',
       'Todos los Eventos Deportivos en Directo y sin cortes',
       'Servidores con redundancia europea y máxima velocidad',
       'Tecnología Anti-Buffer de última generación 2026',
@@ -89,7 +89,7 @@ export const multiScreenPlans = [
     features: [
       '2 Conexiones simultáneas independientes en el mismo hogar',
       '+35.000 Canales internacionales y españoles en 4K/FHD',
-      '+90.000 Películas y Series bajo demanda ilimitadas',
+      '+120.000 Películas y Series bajo demanda ilimitadas',
       'Todo el deporte en directo en ambas pantallas a la vez',
       'Servidores de alta velocidad anti-congelación',
       'Guía EPG + Canales en diferido (Replay)',

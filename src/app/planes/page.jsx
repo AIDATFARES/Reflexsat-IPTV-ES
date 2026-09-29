@@ -29,7 +29,7 @@ export default function PlanesPage() {
     '@type': 'Product',
     name: 'Suscripción Reflexsat IPTV España',
     description:
-      'Suscripción IPTV Premium en España con más de 35.000 canales 4K/HD y 90.000 títulos VOD sin cortes.',
+      'Suscripción IPTV Premium en España con más de 35.000 canales 4K/HD y 120.000 títulos VOD sin cortes.',
     brand: {
       '@type': 'Brand',
       name: 'Reflexsat IPTV',
@@ -149,7 +149,7 @@ export default function PlanesPage() {
             </div>
             <ul className="space-y-2 text-gray-400">
               <li>• Más de 35.000 canales en directo ordenados.</li>
-              <li>• Catálogo VOD de +90.000 películas y series.</li>
+              <li>• Catálogo VOD de +120.000 películas y series.</li>
               <li>• Guía electrónica de programación EPG completa.</li>
             </ul>
           </div>

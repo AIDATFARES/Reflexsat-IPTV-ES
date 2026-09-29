@@ -24,7 +24,7 @@ import { allFaqs } from '../data/faqData';
 export const metadata = {
   title: 'Reflexsat IPTV España — Suscripción IPTV Premium 4K / HD Estable',
   description:
-    'Suscripción IPTV en España con más de 35.000 canales en directo 4K, 90.000 VOD, deportes en vivo y servidores anti-buffering. Activación en 5 min. Prueba con 7 días de garantía.',
+    'Suscripción IPTV en España con más de 35.000 canales en directo 4K, 120.000 VOD, deportes en vivo y servidores anti-buffering. Activación en 5 min. Prueba con 7 días de garantía.',
   alternates: {
     canonical: 'https://www.reflexsat.es/',
   },
@@ -109,7 +109,7 @@ export default function HomePage() {
 
             {/* Subheading */}
             <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed font-normal max-w-3xl mx-auto drop-shadow">
-              Accede a más de <strong>35.000 canales en directo en 4K / Full HD</strong> sin cortes ni buffering, junto a más de <strong>90.000 películas y series VOD</strong>. Todo el fútbol, deportes y entretenimiento en tu Smart TV, Fire Stick, Android o móvil.
+              Accede a más de <strong>35.000 canales en directo en 4K / Full HD</strong> sin cortes ni buffering, junto a más de <strong>120.000 películas y series VOD</strong>. Todo el fútbol, deportes y entretenimiento en tu Smart TV, Fire Stick, Android o móvil.
             </p>
 
             {/* CTAs */}
@@ -137,7 +137,7 @@ export default function HomePage() {
                 <div className="text-xs text-gray-300 font-medium">Canales HD / 4K</div>
               </div>
               <div className="glass-card rounded-xl p-3.5 border border-white/10 backdrop-blur-md bg-dark-900/60">
-                <div className="text-2xl lg:text-3xl font-black text-white">+90.000</div>
+                <div className="text-2xl lg:text-3xl font-black text-white">+120.000</div>
                 <div className="text-xs text-gray-300 font-medium">Películas & Series VOD</div>
               </div>
               <div className="glass-card rounded-xl p-3.5 border border-white/10 backdrop-blur-md bg-dark-900/60">
@@ -251,7 +251,7 @@ export default function HomePage() {
               },
               {
                 icon: Film,
-                title: '+90.000 Películas y Series VOD',
+                title: '+120.000 Películas y Series VOD',
                 desc: 'Catálogo bajo demanda actualizado semanalmente con estrenos de cine y series completas en audio en castellano y versión original.',
               },
               {
@@ -646,7 +646,7 @@ export default function HomePage() {
             Disfruta de la mejor televisión IPTV en España hoy mismo
           </h2>
           <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            Más de 35.000 canales 4K, todo el fútbol en directo y 90.000 títulos en VOD con la garantía y estabilidad de <strong>Reflexsat IPTV</strong>.
+            Más de 35.000 canales 4K, todo el fútbol en directo y 120.000 títulos en VOD con la garantía y estabilidad de <strong>Reflexsat IPTV</strong>.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
