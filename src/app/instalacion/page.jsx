@@ -57,7 +57,7 @@ export default function InstalacionIndexPage() {
         </h1>
         <div className="w-24 h-1 spanish-flag-line mx-auto" />
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-          Selecciona tu dispositivo a continuación para acceder al tutorial paso a paso con las mejores aplicaciones, ajustes de aceleración y solución a problemas habituales.
+          Selecciona tu dispositivo a continuación para acceder al tutorial paso a paso con las mejores aplicaciones de reproducción, ajustes de aceleración y soluciones a dudas frecuentes. Si todavía no dispones de acceso activo, consulta nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción IPTV</Link> o solicita una <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
         </p>
       </div>
 
@@ -74,7 +74,7 @@ export default function InstalacionIndexPage() {
             </div>
             <div className="font-bold text-white">Contratar tu plan</div>
             <p className="text-xs text-gray-400">
-              Elige tu suscripción y recibe al instante tus claves de acceso en el email.
+              Elige tu <Link href="/planes" className="text-spanish-gold underline hover:text-white">suscripción IPTV</Link> y recibe tus claves al instante por email y WhatsApp.
             </p>
           </div>
 
@@ -84,7 +84,7 @@ export default function InstalacionIndexPage() {
             </div>
             <div className="font-bold text-white">Descargar el reproductor</div>
             <p className="text-xs text-gray-400">
-              Instala IPTV Smarters, TiviMate o la app recomendada para tu aparato.
+              Instala <Link href="/blog/como-instalar-iptv-smarters-pro-smart-tv-espana" className="text-spanish-gold underline hover:text-white">IPTV Smarters Pro</Link>, <Link href="/blog/tivimate-espana-configuracion-guia-paso-a-paso" className="text-spanish-gold underline hover:text-white">TiviMate</Link> o la app de tu sistema.
             </p>
           </div>
 

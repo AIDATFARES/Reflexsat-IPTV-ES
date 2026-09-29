@@ -35,7 +35,7 @@ export default function FaqPage() {
         </h1>
         <div className="w-24 h-1 spanish-flag-line mx-auto" />
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-          Encuentra respuestas inmediatas a todas las dudas sobre activación de suscripciones, compatibilidad de reproductores, pagos seguros y velocidad de servidores en España.
+          Encuentra respuestas inmediatas sobre nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción IPTV</Link>, <Link href="/instalacion" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">guías de instalación</Link>, compatibilidad con <Link href="/dispositivos" className="text-spanish-gold hover:underline">Smart TV y dispositivos</Link> o pagos protegidos con <Link href="/politica-de-reembolso" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">garantía de reembolso</Link>.
         </p>
 
         {/* Search Bar */}
@@ -111,7 +111,7 @@ export default function FaqPage() {
       <div className="glass-card rounded-2xl p-8 border border-white/10 text-center space-y-4 max-w-2xl mx-auto bg-gradient-to-b from-dark-900 to-dark-950">
         <h2 className="text-2xl font-bold text-white">¿No has encontrado la respuesta que buscabas?</h2>
         <p className="text-sm text-gray-300 leading-relaxed">
-          Nuestro equipo técnico está a tu entera disposición para resolver cualquier pregunta técnica o comercial antes de contratar.
+          Nuestro equipo técnico está a tu entera disposición a través de <Link href="/contacto" className="text-spanish-gold font-semibold hover:underline">nuestro formulario de contacto</Link> o WhatsApp directo para resolver cualquier duda antes de contratar tu <Link href="/planes" className="text-spanish-gold underline hover:text-white">suscripción IPTV</Link>.
         </p>
         <div className="pt-2">
           <Link

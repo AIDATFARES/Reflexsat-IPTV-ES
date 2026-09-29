@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Send, CheckCircle2, AlertCircle } from 'lucide-react';
 
 export default function ContactForm({ defaultPlan = '' }) {
@@ -46,7 +47,7 @@ export default function ContactForm({ defaultPlan = '' }) {
         <h3 className="text-2xl font-bold text-white">¡Mensaje Recibido Correctamente!</h3>
         <p className="text-gray-300 text-sm max-w-md mx-auto leading-relaxed">
           Gracias, <strong>{formData.nombre}</strong>. Hemos recibido tu solicitud sobre el <strong>{formData.plan}</strong>.
-          Uno de nuestros agentes técnicos se pondrá en contacto contigo en menos de 10 minutos a través de WhatsApp o a tu correo <strong>{formData.email}</strong> para facilitarte los detalles de activación.
+          Uno de nuestros agentes técnicos se pondrá en contacto contigo en menos de 10 minutos a través de WhatsApp o a tu correo <strong>{formData.email}</strong> para facilitarte los detalles de activación. Mientras tanto, puedes revisar nuestras <Link href="/instalacion" className="text-spanish-gold underline hover:text-spanish-redBright">guías de instalación</Link> o consultar las <Link href="/faq" className="text-spanish-gold underline hover:text-spanish-redBright">preguntas frecuentes</Link>.
         </p>
         <button
           type="button"
@@ -163,7 +164,7 @@ export default function ContactForm({ defaultPlan = '' }) {
       <div className="flex items-center gap-2 text-xs text-gray-400">
         <input type="checkbox" required id="consent" className="rounded bg-dark-900 border-white/20 text-spanish-red" />
         <label htmlFor="consent">
-          He leído y acepto la <a href="/politica-de-privacidad" className="text-spanish-gold hover:underline">Política de Privacidad</a> y el tratamiento de mis datos para la gestión de mi consulta.
+          He leído y acepto la <Link href="/politica-de-privacidad" className="text-spanish-gold hover:underline">Política de Privacidad</Link>, los <Link href="/terminos-y-condiciones" className="text-spanish-gold hover:underline">Términos y Condiciones</Link> y la <Link href="/politica-de-reembolso" className="text-spanish-gold hover:underline">Garantía de Devolución</Link>.
         </label>
       </div>
 

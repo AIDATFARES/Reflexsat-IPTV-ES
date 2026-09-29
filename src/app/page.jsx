@@ -109,7 +109,7 @@ export default function HomePage() {
 
             {/* Subheading */}
             <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed font-normal max-w-3xl mx-auto drop-shadow">
-              Accede a más de <strong>35.000 canales en directo en 4K / Full HD</strong> sin cortes ni buffering, junto a más de <strong>120.000 películas y series VOD</strong>. Todo el fútbol, deportes y entretenimiento en tu Smart TV, Fire Stick, Android o móvil.
+              Accede a más de <strong>35.000 canales en directo en 4K / Full HD</strong> sin cortes mediante nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción IPTV</Link>, junto a más de <strong>120.000 películas y series VOD</strong>. Todo el deporte y cine en tu <Link href="/instalacion/samsung-smart-tv" className="text-gray-200 underline decoration-white/30 hover:text-white">Smart TV</Link>, <Link href="/instalacion/fire-tv-stick" className="text-gray-200 underline decoration-white/30 hover:text-white">Fire Stick</Link> o <Link href="/dispositivos" className="text-spanish-gold hover:underline">dispositivos compatibles</Link>.
             </p>
 
             {/* CTAs */}
@@ -181,7 +181,7 @@ export default function HomePage() {
           </h2>
           <div className="w-24 h-1 spanish-flag-line mx-auto" />
           <p className="text-sm text-gray-400 max-w-2xl mx-auto">
-            Configuración ultrarrápida mediante <strong>Xtream Codes API</strong> y <strong>enlace M3U</strong>. Funciona de manera nativa sin necesidad de comprar equipos adicionales.
+            Configuración ultrarrápida mediante <strong>Xtream Codes API</strong> y <strong>enlace M3U</strong>. Sigue nuestras <Link href="/instalacion" className="text-spanish-gold font-semibold hover:underline">guías de instalación paso a paso</Link> para cada uno de los <Link href="/dispositivos" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">dispositivos compatibles</Link>.
           </p>
 
           {/* App Pills Grid */}
@@ -223,7 +223,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Diseñado pensando específicamente en las necesidades del usuario español y europeo: servidores dedicados que eliminan los cortes en partidos de alta tensión y un soporte humano siempre disponible.
+              Diseñado pensando específicamente en las necesidades del usuario español y europeo: servidores dedicados para ver televisión sin cortes con nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes recomendados</Link> y <Link href="/contacto" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">soporte técnico 24/7</Link>.
             </p>
           </div>
 
@@ -297,7 +297,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Planes claros sin costes ocultos. Activación rápida en 5 minutos tras el pago seguro. Respaldados por nuestra <strong>garantía de reembolso de 7 días</strong>.
+              Planes claros sin costes ocultos. Activación rápida en 5 minutos tras el pago seguro. Respaldados por nuestra <Link href="/politica-de-reembolso" className="text-spanish-gold font-bold hover:underline">garantía incondicional de reembolso de 7 días</Link> y <Link href="/contacto" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">asistencia técnica personalizada</Link>.
             </p>
           </div>
 
@@ -342,7 +342,7 @@ export default function HomePage() {
               </h2>
               <div className="w-20 h-1 spanish-flag-line" />
               <p className="text-gray-300 text-base leading-relaxed">
-                Olvídate de los desfases y los cortes justo en el momento del gol. Nuestra red de servidores optimizada para España te asegura la mejor cobertura de los eventos más esperados de la temporada:
+                Olvídate de los desfases y los cortes justo en el momento del gol. Nuestra red de servidores optimizada para España te asegura la mejor cobertura deportiva con nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes IPTV para eventos en vivo</Link>. También puedes consultar nuestra guía sobre <Link href="/blog/solucionar-problemas-buffering-cortes-iptv" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">cómo evitar el buffering en IPTV</Link>.
               </p>
 
               <div className="grid grid-cols-2 gap-3 text-sm text-gray-200">
@@ -417,7 +417,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              No necesitas ningún tipo de experiencia previa. En menos de 5 minutos estarás disfrutando de toda la programación en tu televisor.
+              No necesitas ningún tipo de experiencia previa. En menos de 5 minutos estarás disfrutando de toda la programación en tu televisor consultando nuestras <Link href="/instalacion" className="text-spanish-gold font-bold hover:underline">guías de instalación ilustradas</Link>.
             </p>
           </div>
 
@@ -426,17 +426,29 @@ export default function HomePage() {
               {
                 step: '1',
                 title: 'Elige tu plan de suscripción',
-                desc: 'Selecciona la duración (3, 6 o 12 meses) o el plan familiar según las pantallas que necesites y formaliza tu pedido mediante pago seguro.',
+                desc: (
+                  <>
+                    Selecciona entre el <Link href="/planes" className="text-spanish-gold underline hover:text-white">Plan 3, 6 o 12 meses</Link> o los planes familiares y formaliza tu pedido de manera segura.
+                  </>
+                ),
               },
               {
                 step: '2',
                 title: 'Recibe tus claves en 5 minutos',
-                desc: 'Nuestro sistema automatizado te envía al instante por email y WhatsApp tus credenciales de acceso (usuario, clave, servidor y enlace M3U).',
+                desc: (
+                  <>
+                    Nuestro sistema te envía al instante por email y WhatsApp tus credenciales de acceso. Si requieres ayuda inmediata, abre nuestro <Link href="/contacto" className="text-spanish-gold underline hover:text-white">soporte técnico</Link>.
+                  </>
+                ),
               },
               {
                 step: '3',
                 title: 'Conéctate y disfruta en 4K',
-                desc: 'Descarga tu aplicación preferida en tu Smart TV o Fire Stick (como IPTV Smarters o TiviMate), introduce tus datos y accede a todo el catálogo.',
+                desc: (
+                  <>
+                    Descarga tu reproductor preferido como <Link href="/blog/como-instalar-iptv-smarters-pro-smart-tv-espana" className="text-spanish-gold underline hover:text-white">IPTV Smarters Pro</Link> o <Link href="/blog/tivimate-espana-configuracion-guia-paso-a-paso" className="text-spanish-gold underline hover:text-white">TiviMate</Link> e introduce tus datos.
+                  </>
+                ),
               },
             ].map((stepItem, idx) => (
               <div
@@ -477,7 +489,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Comprueba la diferencia de contar con infraestructura profesional dedicada frente a listas gratuitas o servidores de baja calidad.
+              Comprueba la diferencia de contratar un <Link href="/planes" className="text-spanish-gold font-bold hover:underline">servicio IPTV profesional</Link> frente a listas inestables o gratuitas. Si tienes dudas sobre servidores, consulta nuestras <Link href="/faq" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">preguntas frecuentes</Link>.
             </p>
           </div>
 
@@ -569,7 +581,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              La satisfacción de miles de usuarios en toda la península y las islas respalda la estabilidad y atención de Reflexsat IPTV.
+              La satisfacción de miles de usuarios en toda España respalda la estabilidad y atención de <strong>Reflexsat IPTV</strong>. Descubre por qué eligen nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de 3, 6 y 12 meses</Link>.
             </p>
           </div>
 
@@ -617,7 +629,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Información clara sobre compatibilidad, activación, formas de pago y funcionamiento del servicio.
+              Información clara sobre <Link href="/dispositivos" className="text-spanish-gold hover:underline">compatibilidad</Link>, <Link href="/instalacion" className="text-spanish-gold hover:underline">activación</Link>, <Link href="/planes" className="text-spanish-gold hover:underline">formas de pago</Link> y garantías. Si necesitas resolver cualquier cuestión técnica adicional, consulta nuestro <Link href="/faq" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">centro completo de preguntas frecuentes</Link>.
             </p>
           </div>
 
@@ -646,7 +658,7 @@ export default function HomePage() {
             Disfruta de la mejor televisión IPTV en España hoy mismo
           </h2>
           <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            Más de 35.000 canales 4K, todo el fútbol en directo y 120.000 títulos en VOD con la garantía y estabilidad de <strong>Reflexsat IPTV</strong>.
+            Más de 35.000 canales 4K, todo el fútbol en directo y 120.000 títulos en VOD con la garantía y estabilidad de <strong>Reflexsat IPTV</strong>. Descubre nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción</Link> o solicita tu <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -85,7 +85,7 @@ export default function PlanesPage() {
         </h1>
         <div className="w-24 h-1 spanish-flag-line mx-auto" />
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-          Sin contratos de permanencia, sin cuotas ocultas y con activación en 5 minutos. Disfruta de la mejor televisión en tu hogar con la <strong>garantía de devolución incondicional de 7 días</strong>.
+          Sin contratos de permanencia ni cuotas ocultas. Activación exprés en 5 minutos compatible con <Link href="/dispositivos" className="text-spanish-gold font-semibold hover:underline">todos tus dispositivos</Link> mediante nuestras <Link href="/instalacion" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">guías paso a paso</Link>. Respaldado por nuestra <Link href="/politica-de-reembolso" className="text-spanish-gold font-bold hover:underline">garantía de devolución de 7 días</Link> o solicita tu <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
         </p>
 
         {/* Plan Switcher Tab */}
@@ -160,9 +160,9 @@ export default function PlanesPage() {
               <span>Garantía y Asistencia</span>
             </div>
             <ul className="space-y-2 text-gray-400">
-              <li>• 7 días de garantía total de satisfacción o reembolso.</li>
-              <li>• Soporte técnico prioritario 24/7 en español.</li>
-              <li>• Asistencia paso a paso para la instalación en tu TV.</li>
+              <li>• 7 días de <Link href="/politica-de-reembolso" className="text-gray-300 hover:text-spanish-gold underline">garantía total de satisfacción o reembolso</Link>.</li>
+              <li>• Soporte técnico prioritario 24/7 en español a través de <Link href="/contacto" className="text-gray-300 hover:text-spanish-gold underline">contacto directo</Link>.</li>
+              <li>• Asistencia paso a paso para la <Link href="/instalacion" className="text-gray-300 hover:text-spanish-gold underline">instalación en tu televisor</Link>.</li>
             </ul>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function PlanesPage() {
       <div className="text-center p-8 rounded-2xl bg-dark-950 border border-white/10 max-w-2xl mx-auto">
         <h3 className="text-lg font-bold text-white mb-2">¿Tienes alguna duda sobre qué plan elegir?</h3>
         <p className="text-sm text-gray-400 mb-4">
-          Nuestro equipo de atención al cliente en España te asesora de forma personalizada en minutos.
+          Nuestro equipo de atención al cliente en España te asesora de forma personalizada en minutos o puedes resolver dudas en nuestras <Link href="/faq" className="text-spanish-gold hover:underline">preguntas frecuentes</Link>.
         </p>
         <Link
           href="/contacto"

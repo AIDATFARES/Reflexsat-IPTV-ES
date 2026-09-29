@@ -37,7 +37,7 @@ export default function ContactoPage({ searchParams }) {
         </h1>
         <div className="w-24 h-1 spanish-flag-line mx-auto" />
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-          ¿Tienes alguna duda sobre la compatibilidad de tu televisor, formas de pago o activación? Rellena el formulario o consulta nuestras guías de ayuda directa.
+          ¿Tienes alguna duda sobre la <Link href="/dispositivos" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">compatibilidad de tu televisor</Link>, nuestros <Link href="/planes" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">planes de suscripción</Link> o la <Link href="/instalacion" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">activación inmediata</Link>? Rellena el formulario oficial, consulta las <Link href="/faq" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">preguntas más frecuentes</Link> o revisa nuestra <Link href="/politica-de-reembolso" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">garantía de devolución de 7 días</Link>.
         </p>
       </div>
 
@@ -81,7 +81,7 @@ export default function ContactoPage({ searchParams }) {
                 <div>
                   <div className="font-bold text-white">Activación Exprés</div>
                   <div className="text-xs text-gray-400 mt-0.5">
-                    Envío automático de usuario, contraseña y enlace M3U
+                    Envío automático de usuario y contraseña con guía en nuestra sección de <Link href="/instalacion" className="text-spanish-gold hover:underline">instalación paso a paso</Link>.
                   </div>
                 </div>
               </div>

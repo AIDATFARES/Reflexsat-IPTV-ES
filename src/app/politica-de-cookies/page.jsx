@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default function PoliticaCookiesPage() {
   return (
-    <div className="py-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-4 pb-12 sm:pt-6 sm:pb-14 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <Breadcrumbs items={[{ label: 'Política de Cookies', href: '/politica-de-cookies' }]} />
 
       <div className="space-y-6">
@@ -24,24 +25,30 @@ export default function PoliticaCookiesPage() {
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">1. ¿Qué son las Cookies?</h2>
             <p>
-              Una cookie es un pequeño archivo de texto que un sitio web almacena en el navegador del usuario para recordar información sobre su visita, como sus preferencias de navegación o si ha interactuado previamente con el sitio web.
+              Una cookie es un pequeño archivo de texto que un sitio web almacena en el navegador del usuario para recordar información sobre su visita, como sus preferencias de navegación o si ha interactuado previamente con el sitio web. Para más información sobre el tratamiento general de datos, consulte nuestra <Link href="/politica-de-privacidad" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">Política de Privacidad</Link>.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">2. Tipos de Cookies que Utilizamos</h2>
-            <p>En <strong>Reflexsat IPTV</strong> utilizamos únicamente cookies técnicas y analíticas esenciales:</p>
-            <ul className="list-disc pl-5 space-y-1 text-gray-400">
-              <li><strong>Cookies técnicas necesarias:</strong> Imprescindibles para la correcta navegación, seguridad de las sesiones y funcionamiento del formulario.</li>
-              <li><strong>Cookies de preferencias:</strong> Recuerdan configuraciones como el modo oscuro de la interfaz o el dispositivo seleccionado.</li>
-              <li><strong>Cookies de rendimiento y análisis:</strong> Nos permiten medir el número de visitas y las páginas más consultadas de forma anónima para mejorar la velocidad del sitio.</li>
+            <p>En <strong>Reflexsat IPTV</strong> utilizamos únicamente cookies técnicas y funcionales esenciales:</p>
+            <ul className="list-disc pl-5 space-y-2 text-gray-400">
+              <li>
+                <strong>Cookies técnicas necesarias:</strong> Imprescindibles para la correcta navegación, seguridad y funcionamiento del <Link href="/contacto" className="text-spanish-gold hover:underline">formulario de contacto</Link>.
+              </li>
+              <li>
+                <strong>Cookies de preferencias:</strong> Recuerdan configuraciones de interfaz o la preselección de <Link href="/planes" className="text-spanish-gold hover:underline">planes de IPTV</Link>.
+              </li>
+              <li>
+                <strong>Cookies de rendimiento y análisis:</strong> Permiten medir de forma anónima el rendimiento de la plataforma para mejorar los tiempos de carga en España.
+              </li>
             </ul>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">3. Cómo Gestionar o Desactivar las Cookies</h2>
             <p>
-              Puedes configurar tu navegador web en cualquier momento para rechazar, bloquear o eliminar las cookies instaladas. Ten en cuenta que si deshabilitas todas las cookies técnicas, algunas funcionalidades de la web podrían verse afectadas.
+              Puedes configurar tu navegador web en cualquier momento para rechazar, bloquear o eliminar las cookies instaladas. Si tienes cualquier consulta sobre el tratamiento de tus datos o sobre nuestros servicios, no dudes en escribirnos a través de nuestro <Link href="/contacto" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">canal de atención al cliente</Link>.
             </p>
           </section>
         </div>

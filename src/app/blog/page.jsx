@@ -31,7 +31,7 @@ export default function BlogIndexPage() {
         </h1>
         <div className="w-24 h-1 spanish-flag-line mx-auto" />
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-          Artículos especializados, comparativas de reproductores, tutoriales de configuración y recomendaciones para optimizar el rendimiento de tu señal IPTV en España.
+          Artículos especializados, comparativas de reproductores para tus <Link href="/dispositivos" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">dispositivos compatibles</Link>, tutoriales de <Link href="/instalacion" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">configuración paso a paso</Link> y recomendaciones para sacar el máximo rendimiento a nuestros <Link href="/planes" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">planes de suscripción IPTV</Link> o contactar con nuestro <Link href="/contacto" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">soporte técnico</Link>.
         </p>
 
         {/* Category Pills */}
@@ -129,6 +129,28 @@ export default function BlogIndexPage() {
             </div>
           </Link>
         ))}
+      </div>
+
+      {/* Blog Bottom Help Banner */}
+      <div className="glass-card rounded-2xl p-6 sm:p-8 border border-white/10 text-center max-w-3xl mx-auto space-y-4">
+        <h3 className="text-xl font-bold text-white">¿Tienes alguna duda sobre qué app instalar o qué plan elegir?</h3>
+        <p className="text-sm text-gray-300 leading-relaxed">
+          Consulta nuestras <Link href="/faq" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">preguntas más frecuentes</Link>, revisa la compatibilidad de tus <Link href="/dispositivos" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">aparatos y Smart TV</Link> o escríbenos directamente a través de nuestro canal de <Link href="/contacto" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">atención y soporte 24/7</Link>.
+        </p>
+        <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
+          <Link
+            href="/planes"
+            className="px-6 py-3 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-spanish-red to-spanish-redBright shadow-glow-red hover:shadow-lg transition-all"
+          >
+            Ver Planes de Suscripción →
+          </Link>
+          <Link
+            href="/contacto?plan=prueba-gratis"
+            className="px-6 py-3 rounded-xl font-bold text-xs text-spanish-gold bg-spanish-gold/10 border border-spanish-gold/30 hover:bg-spanish-gold/20 transition-all"
+          >
+            Solicitar Prueba Gratis 24h
+          </Link>
+        </div>
       </div>
     </div>
   );

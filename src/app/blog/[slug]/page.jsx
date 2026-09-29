@@ -137,6 +137,7 @@ export default function BlogArticlePage({ params }) {
         [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-white [&>h2]:tracking-tight [&>h2]:mt-10 [&>h2]:mb-4
         [&>h3]:text-xl [&>h3]:font-bold [&>h3]:text-spanish-gold [&>h3]:mt-6 [&>h3]:mb-3
         [&>p]:leading-relaxed [&>p]:mb-4
+        [&_a]:text-spanish-gold [&_a]:underline hover:[&_a]:text-spanish-redBright [&_a]:font-medium transition-colors
         [&>ul]:list-disc [&>ul]:pl-5 [&>ul]:space-y-2 [&>ul]:my-4
         [&>ol]:list-decimal [&>ol]:pl-5 [&>ol]:space-y-2 [&>ol]:my-4
         [&>strong]:text-white"
@@ -150,8 +151,8 @@ export default function BlogArticlePage({ params }) {
             Recomendación de Reflexsat
           </span>
           <h3 className="text-xl font-bold text-white">¿Listo para probar el servicio líder en España?</h3>
-          <p className="text-xs text-gray-300">
-            Activación garantizada en 5 minutos y 7 días de garantía incondicional de reembolso.
+          <p className="text-xs text-gray-300 leading-relaxed">
+            Activación garantizada en 5 minutos y <Link href="/politica-de-reembolso" className="text-spanish-gold underline hover:text-spanish-redBright">7 días de garantía incondicional de reembolso</Link>. Solicita tu <Link href="/contacto?plan=prueba-gratis" className="text-spanish-gold underline hover:text-spanish-redBright">prueba gratuita</Link> o revisa nuestras <Link href="/instalacion" className="text-spanish-gold underline hover:text-spanish-redBright">guías de instalación</Link>.
           </p>
         </div>
         <Link

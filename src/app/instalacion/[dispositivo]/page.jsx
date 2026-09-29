@@ -87,7 +87,7 @@ export default function DispositivoInstalacionPage({ params }) {
         </h1>
         <div className="w-20 h-1 spanish-flag-line" />
         <p className="text-gray-300 text-base leading-relaxed max-w-3xl">
-          {device.shortDesc} Sigue los pasos que detallamos a continuación para conectar tu servicio de <strong>Reflexsat IPTV</strong> y disfrutar de canales 4K sin complicaciones.
+          {device.shortDesc} Sigue los pasos que detallamos a continuación para conectar tu <Link href="/planes" className="text-spanish-gold font-bold hover:underline">suscripción de Reflexsat IPTV</Link> o consulta todos los <Link href="/dispositivos" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">dispositivos compatibles</Link> si utilizas varios aparatos en tu hogar.
         </p>
       </div>
 
@@ -170,6 +170,9 @@ export default function DispositivoInstalacionPage({ params }) {
               </li>
             ))}
           </ul>
+          <p className="text-xs text-gray-400 pt-3 border-t border-white/5">
+            ¿Continúas con problemas de corte o congelación? Revisa nuestra guía sobre <Link href="/blog/solucionar-problemas-buffering-cortes-iptv" className="text-spanish-gold underline hover:text-white">cómo solucionar cortes y buffering en IPTV</Link> o contacta con nuestro <Link href="/contacto" className="text-spanish-gold underline hover:text-white">soporte técnico 24/7</Link>.
+          </p>
         </div>
       )}
 
@@ -215,7 +218,7 @@ export default function DispositivoInstalacionPage({ params }) {
           ¿Aún no tienes tu suscripción de Reflexsat IPTV?
         </h2>
         <p className="text-sm text-gray-300 max-w-lg mx-auto">
-          Elige tu plan hoy mismo y recibe tus datos de conexión en 5 minutos para activar tu televisor.
+          Elige entre nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de 3, 6 o 12 meses</Link> y recibe tus claves en 5 minutos para activar tu televisor, o pide tu <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
         </p>
         <div className="pt-2">
           <Link

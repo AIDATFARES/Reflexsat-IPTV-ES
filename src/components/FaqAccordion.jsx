@@ -19,7 +19,7 @@ export default function FaqAccordion({ items, includeSchema = true }) {
       name: item.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: item.answer,
+        text: typeof item.answer === 'string' ? item.answer.replace(/<[^>]*>?/gm, '') : '',
       },
     })),
   };
@@ -63,9 +63,10 @@ export default function FaqAccordion({ items, includeSchema = true }) {
             </button>
 
             {isOpen && (
-              <div className="px-5 pb-5 text-sm text-gray-300 leading-relaxed border-t border-white/5 pt-3">
-                <p>{item.answer}</p>
-              </div>
+              <div
+                className="px-5 pb-5 text-sm text-gray-300 leading-relaxed border-t border-white/5 pt-3 [&_a]:text-spanish-gold [&_a]:font-semibold [&_a]:underline hover:[&_a]:text-white"
+                dangerouslySetInnerHTML={{ __html: item.answer }}
+              />
             )}
           </div>
         );
