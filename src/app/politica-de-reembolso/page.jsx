@@ -37,7 +37,7 @@ export default function PoliticaReembolsoPage() {
                 Incompatibilidad técnica de tu <Link href="/dispositivos" className="text-spanish-gold hover:underline">aparato o televisor</Link> tras haber recibido soporte o consultado las <Link href="/instalacion" className="text-spanish-gold hover:underline">guías de instalación oficiales</Link>.
               </li>
               <li>
-                Problemas persistentes de cortes o señal que no puedan solucionarse aplicando nuestros consejos de optimización y <Link href="/blog/solucionar-problemas-buffering-cortes-iptv" className="text-spanish-gold hover:underline">solución al buffering</Link>.
+                Problemas persistentes de cortes o señal que no puedan solucionarse aplicando nuestros consejos de optimización y <Link href="/blog/como-solucionar-buffering-cortes-iptv" className="text-spanish-gold hover:underline">solución al buffering</Link>.
               </li>
               <li>Retraso superior a 24 horas en la activación inicial tras la confirmación de pago.</li>
               <li>Insatisfacción general con la calidad del servicio dentro del plazo garantizado de 7 días naturales.</li>

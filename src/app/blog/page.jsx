@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Clock, Calendar, ArrowRight, BookOpen, ChevronRight } from 'lucide-react';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { blogCategories, blogArticles } from '../../data/blogData';
@@ -58,9 +59,9 @@ export default function BlogIndexPage() {
         <div className="mb-16">
           <Link
             href={`/blog/${featuredArticle.slug}`}
-            className="glass-card rounded-3xl p-6 sm:p-10 border border-white/10 hover:border-spanish-red/40 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center group shadow-2xl"
+            className="glass-card rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-spanish-red/40 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center group shadow-2xl overflow-hidden"
           >
-            <div className="lg:col-span-8 space-y-4">
+            <div className="lg:col-span-7 space-y-4">
               <div className="flex items-center gap-3">
                 <span className="px-3 py-1 rounded-full text-xs font-bold bg-spanish-gold/20 text-spanish-gold border border-spanish-gold/30">
                   ⭐ Destacado
@@ -84,13 +85,22 @@ export default function BlogIndexPage() {
                 </span>
                 <span>• {featuredArticle.author}</span>
               </div>
+              <div className="pt-2">
+                <span className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-spanish-red to-spanish-redBright shadow-glow-red group-hover:scale-105 transition-all">
+                  <span>Leer artículo completo</span>
+                  <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
             </div>
 
-            <div className="lg:col-span-4 flex justify-end">
-              <span className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-spanish-red to-spanish-redBright shadow-glow-red group-hover:scale-105 transition-all">
-                <span>Leer artículo completo</span>
-                <ArrowRight className="w-4 h-4" />
-              </span>
+            <div className="lg:col-span-5 relative aspect-video w-full rounded-2xl overflow-hidden border border-white/10 shadow-lg bg-dark-900">
+              <Image
+                src={featuredArticle.image}
+                alt={featuredArticle.imageAlt || featuredArticle.title}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                priority
+              />
             </div>
           </Link>
         </div>
@@ -102,26 +112,43 @@ export default function BlogIndexPage() {
           <Link
             key={article.slug}
             href={`/blog/${article.slug}`}
-            className="glass-card glass-card-hover rounded-2xl p-6 sm:p-8 border border-white/5 hover:border-spanish-red/40 flex flex-col justify-between group"
+            className="glass-card glass-card-hover rounded-2xl overflow-hidden border border-white/5 hover:border-spanish-red/40 flex flex-col justify-between group"
           >
             <div>
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-xs font-bold text-spanish-gold bg-spanish-gold/10 px-2.5 py-1 rounded-md">
-                  {article.category}
-                </span>
-                <span className="text-xs text-gray-500">{article.readTime}</span>
-              </div>
+              {/* Article Card Thumbnail */}
+              {article.image && (
+                <div className="relative aspect-video w-full overflow-hidden bg-dark-900 border-b border-white/5">
+                  <Image
+                    src={article.image}
+                    alt={article.imageAlt || article.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-3 left-3">
+                    <span className="text-[11px] font-bold text-spanish-gold bg-dark-950/80 backdrop-blur-md px-2.5 py-1 rounded-md border border-spanish-gold/30">
+                      {article.category}
+                    </span>
+                  </div>
+                </div>
+              )}
 
-              <h2 className="text-lg font-bold text-white group-hover:text-spanish-gold transition-colors mb-3 tracking-tight line-clamp-2 leading-snug">
-                {article.title}
-              </h2>
-              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed line-clamp-3 mb-6">
-                {article.excerpt}
-              </p>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-3 text-xs text-gray-500">
+                  <span>{article.date}</span>
+                  <span>{article.readTime}</span>
+                </div>
+
+                <h2 className="text-lg font-bold text-white group-hover:text-spanish-gold transition-colors mb-3 tracking-tight line-clamp-2 leading-snug">
+                  {article.title}
+                </h2>
+                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed line-clamp-3 mb-2">
+                  {article.excerpt}
+                </p>
+              </div>
             </div>
 
-            <div className="pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
-              <span>{article.date}</span>
+            <div className="px-6 pb-6 pt-3 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+              <span>{article.author}</span>
               <span className="font-bold text-spanish-redBright group-hover:translate-x-1 transition-transform flex items-center gap-1">
                 <span>Leer más</span>
                 <ChevronRight className="w-4 h-4" />

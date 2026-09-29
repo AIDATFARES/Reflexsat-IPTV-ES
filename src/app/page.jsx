@@ -111,19 +111,19 @@ export default function HomePage() {
               Accede a más de <strong>35.000 canales en directo en 4K / Full HD</strong> sin cortes mediante nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción IPTV</Link>, junto a más de <strong>120.000 películas y series VOD</strong>. Todo el deporte y cine en tu <Link href="/instalacion/samsung-smart-tv" className="text-gray-200 underline decoration-white/30 hover:text-white">Smart TV</Link>, <Link href="/instalacion/fire-tv-stick" className="text-gray-200 underline decoration-white/30 hover:text-white">Fire Stick</Link> o <Link href="/dispositivos" className="text-spanish-gold hover:underline">dispositivos compatibles</Link>.
             </p>
 
-            {/* CTAs with animated effects */}
+            {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <a
                 href="#planes"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-extrabold text-white bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red shadow-glow-red hover:shadow-2xl btn-shine btn-glow-pulse btn-interactive group cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-extrabold text-white bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red shadow-glow-red hover:shadow-lg transition-all duration-200 group"
               >
                 <span>Ver planes y ofertas</span>
-                <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1.5" />
+                <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
               </a>
 
               <Link
                 href="/contacto?plan=prueba-gratis"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-dark-900/80 hover:bg-dark-800 backdrop-blur-md border border-white/15 hover:border-spanish-gold/60 btn-secondary-glow cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-dark-900/80 hover:bg-dark-800 backdrop-blur-md border border-white/15 hover:border-spanish-gold/40 hover:text-white transition-all duration-200"
               >
                 <span>Solicitar prueba gratis</span>
               </Link>
@@ -321,7 +321,7 @@ export default function HomePage() {
               </h2>
               <div className="w-20 h-1 spanish-flag-line" />
               <p className="text-gray-300 text-base leading-relaxed">
-                Olvídate de los desfases y los cortes justo en el momento del gol. Nuestra red de servidores optimizada para España te asegura la mejor cobertura deportiva con nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes IPTV para eventos en vivo</Link>. También puedes consultar nuestra guía sobre <Link href="/blog/solucionar-problemas-buffering-cortes-iptv" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">cómo evitar el buffering en IPTV</Link>.
+                Olvídate de los desfases y los cortes justo en el momento del gol. Nuestra red de servidores optimizada para España te asegura la mejor cobertura deportiva con nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes IPTV para eventos en vivo</Link>. También puedes consultar nuestra guía sobre <Link href="/blog/como-solucionar-buffering-cortes-iptv" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">cómo evitar el buffering en IPTV</Link>.
               </p>
 
               <div className="grid grid-cols-2 gap-3 text-sm text-gray-200">
@@ -425,7 +425,7 @@ export default function HomePage() {
                 title: 'Conéctate y disfruta en 4K',
                 desc: (
                   <>
-                    Descarga tu reproductor preferido como <Link href="/blog/como-instalar-iptv-smarters-pro-smart-tv-espana" className="text-spanish-gold underline hover:text-white">IPTV Smarters Pro</Link> o <Link href="/blog/tivimate-espana-configuracion-guia-paso-a-paso" className="text-spanish-gold underline hover:text-white">TiviMate</Link> e introduce tus datos.
+                    Descarga tu reproductor preferido como <Link href="/blog/guia-instalar-iptv-smarters-pro-smart-tv" className="text-spanish-gold underline hover:text-white">IPTV Smarters Pro</Link> o <Link href="/blog/guia-configuracion-tivimate-espana" className="text-spanish-gold underline hover:text-white">TiviMate</Link> e introduce tus datos.
                   </>
                 ),
               },
@@ -643,13 +643,13 @@ export default function HomePage() {
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#planes"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-extrabold text-white bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red shadow-glow-red hover:shadow-2xl btn-shine btn-glow-pulse btn-interactive cursor-pointer"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-extrabold text-white bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red shadow-glow-red hover:shadow-xl transition-all"
             >
               Ver planes y suscribirse
             </a>
             <Link
               href="/contacto"
-              className="w-full sm:w-auto px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-white/5 hover:bg-white/10 border border-white/10 btn-secondary-glow cursor-pointer"
+              className="w-full sm:w-auto px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-white/5 hover:bg-white/10 border border-white/10 transition-all"
             >
               Contactar con un asesor
             </Link>

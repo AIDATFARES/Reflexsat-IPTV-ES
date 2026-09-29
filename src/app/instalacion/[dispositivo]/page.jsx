@@ -171,7 +171,7 @@ export default function DispositivoInstalacionPage({ params }) {
             ))}
           </ul>
           <p className="text-xs text-gray-400 pt-3 border-t border-white/5">
-            ¿Continúas con problemas de corte o congelación? Revisa nuestra guía sobre <Link href="/blog/solucionar-problemas-buffering-cortes-iptv" className="text-spanish-gold underline hover:text-white">cómo solucionar cortes y buffering en IPTV</Link> o contacta con nuestro <Link href="/contacto" className="text-spanish-gold underline hover:text-white">soporte técnico 24/7</Link>.
+            ¿Continúas con problemas de corte o congelación? Revisa nuestra guía sobre <Link href="/blog/como-solucionar-buffering-cortes-iptv" className="text-spanish-gold underline hover:text-white">cómo solucionar cortes y buffering en IPTV</Link> o contacta con nuestro <Link href="/contacto" className="text-spanish-gold underline hover:text-white">soporte técnico 24/7</Link>.
           </p>
         </div>
       )}

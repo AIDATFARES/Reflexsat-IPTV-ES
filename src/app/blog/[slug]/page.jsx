@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Calendar,
   Clock,
@@ -23,26 +24,34 @@ export function generateMetadata({ params }) {
   const article = blogArticles.find((a) => a.slug === params.slug);
   if (!article) return { title: 'Artículo no encontrado' };
 
+  const ogImageUrl = article.image || '/images/og-image.svg';
+
   return {
-    title: `${article.title} | Reflexsat IPTV`,
+    title: `${article.metaTitle || article.title} | Reflexsat IPTV`,
     description: article.metaDescription,
     keywords: article.keywords,
     alternates: {
       canonical: `https://www.reflexsat.es/blog/${article.slug}`,
     },
     openGraph: {
-      title: article.title,
+      title: article.metaTitle || article.title,
       description: article.metaDescription,
       url: `https://www.reflexsat.es/blog/${article.slug}`,
       type: 'article',
       images: [
         {
-          url: '/images/og-image.svg',
+          url: ogImageUrl,
           width: 1200,
-          height: 630,
-          alt: article.title,
+          height: 675,
+          alt: article.imageAlt || article.title,
         },
       ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.metaTitle || article.title,
+      description: article.metaDescription,
+      images: [ogImageUrl],
     },
   };
 }
@@ -60,7 +69,7 @@ export default function BlogArticlePage({ params }) {
     '@type': 'Article',
     headline: article.title,
     description: article.metaDescription,
-    image: 'https://www.reflexsat.es/images/og-image.svg',
+    image: article.image ? `https://www.reflexsat.es${article.image}` : 'https://www.reflexsat.es/images/og-image.svg',
     datePublished: '2026-01-15T08:00:00+01:00',
     dateModified: '2026-03-29T10:00:00+01:00',
     author: {
@@ -102,7 +111,7 @@ export default function BlogArticlePage({ params }) {
       />
 
       {/* Header */}
-      <header className="mb-10 space-y-4">
+      <header className="mb-8 space-y-4">
         <div className="flex items-center gap-2">
           <span className="px-3 py-1 rounded-full text-xs font-bold bg-spanish-red/10 text-spanish-redBright border border-spanish-red/20">
             {article.category}
@@ -130,6 +139,19 @@ export default function BlogArticlePage({ params }) {
           </span>
         </div>
       </header>
+
+      {/* Featured Banner Image */}
+      {article.image && (
+        <div className="relative w-full aspect-video rounded-2xl overflow-hidden mb-10 border border-white/10 shadow-2xl bg-dark-900">
+          <Image
+            src={article.image}
+            alt={article.imageAlt || article.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      )}
 
       {/* Article Content */}
       <div
@@ -171,20 +193,32 @@ export default function BlogArticlePage({ params }) {
             <Link
               key={rel.slug}
               href={`/blog/${rel.slug}`}
-              className="glass-card p-5 rounded-2xl border border-white/5 hover:border-spanish-red/40 transition-all flex flex-col justify-between group"
+              className="glass-card rounded-2xl overflow-hidden border border-white/5 hover:border-spanish-red/40 transition-all flex flex-col justify-between group"
             >
-              <div>
-                <span className="text-[10px] font-bold text-spanish-gold uppercase tracking-wider block mb-2">
-                  {rel.category}
+              {rel.image && (
+                <div className="relative aspect-video w-full overflow-hidden bg-dark-900">
+                  <Image
+                    src={rel.image}
+                    alt={rel.imageAlt || rel.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              )}
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] font-bold text-spanish-gold uppercase tracking-wider block mb-2">
+                    {rel.category}
+                  </span>
+                  <h3 className="text-sm font-bold text-white group-hover:text-spanish-gold transition-colors line-clamp-2 mb-2 leading-snug">
+                    {rel.title}
+                  </h3>
+                </div>
+                <span className="text-xs text-spanish-redBright font-semibold pt-3 flex items-center gap-1">
+                  <span>Leer artículo</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </span>
-                <h3 className="text-sm font-bold text-white group-hover:text-spanish-gold transition-colors line-clamp-2 mb-2 leading-snug">
-                  {rel.title}
-                </h3>
               </div>
-              <span className="text-xs text-spanish-redBright font-semibold pt-3 flex items-center gap-1">
-                <span>Leer artículo</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </span>
             </Link>
           ))}
         </div>

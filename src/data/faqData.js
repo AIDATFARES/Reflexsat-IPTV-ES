@@ -45,7 +45,7 @@ export const allFaqs = [
   {
     category: 'instalacion',
     question: '¿Qué aplicación es la más recomendada para utilizar Reflexsat IPTV?',
-    answer: 'La elección depende de tu dispositivo: para televisores Samsung y LG recomendamos <a href="/blog/como-instalar-iptv-smarters-pro-smart-tv-espana">IPTV Smarters Pro</a>, Smart IPTV o IBO Player; para Amazon Fire TV Stick y Android TV, <a href="/blog/tivimate-espana-configuracion-guia-paso-a-paso">TiviMate IPTV Player</a> ofrece el mejor rendimiento; y para el resto puedes consultar nuestra sección de <a href="/dispositivos">dispositivos compatibles</a>.',
+    answer: 'La elección depende de tu dispositivo: para televisores Samsung y LG recomendamos <a href="/blog/guia-instalar-iptv-smarters-pro-smart-tv">IPTV Smarters Pro</a>, Smart IPTV o IBO Player; para Amazon Fire TV Stick y Android TV, <a href="/blog/guia-configuracion-tivimate-espana">TiviMate IPTV Player</a> ofrece el mejor rendimiento; y para el resto puedes consultar nuestra sección de <a href="/dispositivos">dispositivos compatibles</a>.',
   },
   {
     category: 'instalacion',
@@ -55,12 +55,12 @@ export const allFaqs = [
   {
     category: 'tecnico',
     question: '¿Qué velocidad de conexión a Internet necesito para ver canales en 4K sin cortes?',
-    answer: 'Recomendamos un mínimo de 15 Mbps de velocidad real para canales en calidad Full HD y 30 Mbps para transmisiones en calidad 4K Ultra HD. Para optimizar tu conexión y evitar retrasos, revisa nuestro artículo técnico sobre <a href="/blog/solucionar-problemas-buffering-cortes-iptv">cómo solucionar cortes y buffering en IPTV</a>.',
+    answer: 'Recomendamos un mínimo de 15 Mbps de velocidad real para canales en calidad Full HD y 30 Mbps para transmisiones en calidad 4K Ultra HD. Para optimizar tu conexión y evitar retrasos, revisa nuestro artículo técnico sobre <a href="/blog/como-solucionar-buffering-cortes-iptv">cómo solucionar cortes y buffering en IPTV</a>.',
   },
   {
     category: 'tecnico',
     question: '¿Cómo evitan los cortes y la congelación durante los partidos de fútbol importantes?',
-    answer: 'Reflexsat IPTV utiliza servidores dedicados con balanceo dinámico de carga, tecnología Anti-Freeze 2026 y nodos de distribución en España y Europa. Puedes revisar los detalles técnicos en la comparativa de <a href="/planes">nuestros planes</a> o consultar nuestras recomendaciones de <a href="/blog/solucionar-problemas-buffering-cortes-iptv">estabilidad en partidos clave</a>.',
+    answer: 'Reflexsat IPTV utiliza servidores dedicados con balanceo dinámico de carga, tecnología Anti-Freeze 2026 y nodos de distribución en España y Europa. Puedes revisar los detalles técnicos en la comparativa de <a href="/planes">nuestros planes</a> o consultar nuestras recomendaciones de <a href="/blog/como-solucionar-buffering-cortes-iptv">estabilidad en partidos clave</a>.',
   },
   {
     category: 'contenido',

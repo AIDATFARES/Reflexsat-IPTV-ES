@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090909"/>
+      <stop offset="50%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#060606"/>
+    </linearGradient>
+    <linearGradient id="flagGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AA151B"/>
+      <stop offset="35%" stop-color="#AA151B"/>
+      <stop offset="35%" stop-color="#F1BF00"/>
+      <stop offset="65%" stop-color="#F1BF00"/>
+      <stop offset="65%" stop-color="#AA151B"/>
+      <stop offset="100%" stop-color="#AA151B"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="15" stdDeviation="25" flood-color="#D61F2C" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="135" x2="1200" y2="135"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="405" x2="1200" y2="405"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="240" y1="0" x2="240" y2="675"/>
+    <line x1="480" y1="0" x2="480" y2="675"/>
+    <line x1="720" y1="0" x2="720" y2="675"/>
+    <line x1="960" y1="0" x2="960" y2="675"/>
+  </g>
+
+  <!-- Ambient Glow Circles -->
+  <circle cx="850" cy="300" r="260" fill="#D61F2C" opacity="0.12" filter="blur(60px)"/>
+  <circle cx="350" cy="450" r="200" fill="#3B82F6" opacity="0.08" filter="blur(60px)"/>
+
+  <!-- Left Text Info -->
+  <g transform="translate(100, 180)">
+    <!-- Brand Badge -->
+    <rect width="200" height="32" rx="16" fill="#D61F2C" fill-opacity="0.15" stroke="#D61F2C" stroke-opacity="0.4"/>
+    <text x="100" y="21" fill="#FFC400" font-family="'Inter', sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="1.5">TUTORIAL FIRESTICK</text>
+
+    <!-- Main Title -->
+    <text x="0" y="85" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">TiviMate IPTV Player</text>
+    <text x="0" y="135" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">Fire TV &amp; Android</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="180" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="18" font-weight="500">Configuración EPG, Xtream Codes y Multi-pantalla</text>
+
+    <!-- Spanish Flag Line -->
+    <rect y="210" width="140" height="4" rx="2" fill="url(#flagGrad)"/>
+
+    <!-- Key Badges -->
+    <g transform="translate(0, 235)">
+      <rect width="115" height="34" rx="8" fill="#1C1C1E" stroke="#ffffff" stroke-opacity="0.1"/>
+      <text x="57" y="22" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Fire TV Stick</text>
+
+      <rect x="125" width="115" height="34" rx="8" fill="#1C1C1E" stroke="#ffffff" stroke-opacity="0.1"/>
+      <text x="182" y="22" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Multi-View 4x</text>
+
+      <rect x="250" width="120" height="34" rx="8" fill="#1C1C1E" stroke="#ffffff" stroke-opacity="0.1"/>
+      <text x="310" y="22" fill="#22C55E" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Auto Frame Rate</text>
+    </g>
+  </g>
+
+  <!-- Right Visual: TiviMate EPG Grid & Firestick Graphic -->
+  <g transform="translate(680, 140)" filter="url(#shadow)">
+    <!-- Device Frame -->
+    <rect width="440" height="270" rx="14" fill="#0D0D0D" stroke="#ffffff" stroke-opacity="0.15" stroke-width="2"/>
+    
+    <!-- TV Screen Display -->
+    <rect x="10" y="10" width="420" height="250" rx="8" fill="#101014"/>
+
+    <!-- Top Status Bar -->
+    <rect x="10" y="10" width="420" height="32" fill="#181820"/>
+    <text x="25" y="31" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="800">TiviMate Premium — Reflexsat IPTV</text>
+    <rect x="360" y="18" width="60" height="16" rx="4" fill="#D61F2C"/>
+    <text x="390" y="30" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="8" font-weight="800" text-anchor="middle">4K LIVE</text>
+
+    <!-- Side Category List -->
+    <rect x="10" y="42" width="105" height="218" fill="#14141A"/>
+    <rect x="15" y="52" width="95" height="26" rx="4" fill="#D61F2C" fill-opacity="0.2"/>
+    <text x="25" y="69" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="10" font-weight="700">⚽ ESPAÑA</text>
+
+    <text x="25" y="99" fill="#71717A" font-family="'Inter', sans-serif" font-size="10" font-weight="600">🏆 DEPORTES</text>
+    <text x="25" y="129" fill="#71717A" font-family="'Inter', sans-serif" font-size="10" font-weight="600">🎬 CINE PREMIUM</text>
+    <text x="25" y="159" fill="#71717A" font-family="'Inter', sans-serif" font-size="10" font-weight="600">📺 SERIES 24/7</text>
+    <text x="25" y="189" fill="#71717A" font-family="'Inter', sans-serif" font-size="10" font-weight="600">🌍 INTERNACIONAL</text>
+    <text x="25" y="219" fill="#71717A" font-family="'Inter', sans-serif" font-size="10" font-weight="600">⭐ FAVORITOS</text>
+
+    <!-- EPG Timeline Grid -->
+    <g transform="translate(120, 50)">
+      <!-- Channel 1 Row -->
+      <rect width="60" height="40" rx="4" fill="#1C1C26"/>
+      <text x="30" y="25" fill="#FFC400" font-family="'Inter', sans-serif" font-size="9" font-weight="800" text-anchor="middle">M. LALIGA</text>
+      <rect x="65" width="135" height="40" rx="4" fill="#222232"/>
+      <text x="75" y="20" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="9" font-weight="700">El Clásico en Directo</text>
+      <text x="75" y="32" fill="#71717A" font-family="'Inter', sans-serif" font-size="8">20:45 - 23:00 (4K HDR)</text>
+      <rect x="205" width="95" height="40" rx="4" fill="#181822"/>
+      <text x="215" y="25" fill="#71717A" font-family="'Inter', sans-serif" font-size="9">Post-Partido</text>
+
+      <!-- Channel 2 Row -->
+      <g transform="translate(0, 48)">
+        <rect width="60" height="40" rx="4" fill="#1C1C26"/>
+        <text x="30" y="25" fill="#00D084" font-family="'Inter', sans-serif" font-size="9" font-weight="800" text-anchor="middle">CHAMPIONS</text>
+        <rect x="65" width="180" height="40" rx="4" fill="#222232"/>
+        <text x="75" y="20" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="9" font-weight="700">Jornada UCL Cuartos</text>
+        <text x="75" y="32" fill="#71717A" font-family="'Inter', sans-serif" font-size="8">21:00 - 23:15 (50 FPS)</text>
+        <rect x="250" width="50" height="40" rx="4" fill="#181822"/>
+        <text x="260" y="25" fill="#71717A" font-family="'Inter', sans-serif" font-size="9">Resumen</text>
+      </g>
+
+      <!-- Channel 3 Row -->
+      <g transform="translate(0, 96)">
+        <rect width="60" height="40" rx="4" fill="#1C1C26"/>
+        <text x="30" y="25" fill="#3B82F6" font-family="'Inter', sans-serif" font-size="9" font-weight="800" text-anchor="middle">DAZN F1</text>
+        <rect x="65" width="110" height="40" rx="4" fill="#222232"/>
+        <text x="75" y="20" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="9" font-weight="700">Gran Premio F1</text>
+        <text x="75" y="32" fill="#71717A" font-family="'Inter', sans-serif" font-size="8">15:00 - 17:30</text>
+        <rect x="180" width="120" height="40" rx="4" fill="#181822"/>
+        <text x="190" y="25" fill="#71717A" font-family="'Inter', sans-serif" font-size="9">Rueda de Prensa</text>
+      </g>
+
+      <!-- Channel 4 Row -->
+      <g transform="translate(0, 144)">
+        <rect width="60" height="40" rx="4" fill="#1C1C26"/>
+        <text x="30" y="25" fill="#E4E4E7" font-family="'Inter', sans-serif" font-size="9" font-weight="800" text-anchor="middle">ESTRENOS</text>
+        <rect x="65" width="235" height="40" rx="4" fill="#222232"/>
+        <text x="75" y="20" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="9" font-weight="700">Película Estreno 2026</text>
+        <text x="75" y="32" fill="#71717A" font-family="'Inter', sans-serif" font-size="8">Audio Dolby Atmos 5.1</text>
+      </g>
+    </g>
+  </g>
+</svg>

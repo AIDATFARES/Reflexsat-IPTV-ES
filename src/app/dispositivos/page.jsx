@@ -124,7 +124,7 @@ export default function DispositivosPage() {
           <span>Recomendaciones de Conexión a Internet en España</span>
         </h3>
         <p className="text-sm text-gray-300 leading-relaxed">
-          Para exprimir al máximo la resolución 4K y 60 FPS en eventos en directo con nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción</Link>, te sugerimos contar con una velocidad real mínima. Si experimentas problemas en tu red, revisa nuestro artículo sobre <Link href="/blog/solucionar-problemas-buffering-cortes-iptv" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">solucionar problemas de buffering en IPTV</Link>.
+          Para exprimir al máximo la resolución 4K y 60 FPS en eventos en directo con nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción</Link>, te sugerimos contar con una velocidad real mínima. Si experimentas problemas en tu red, revisa nuestro artículo sobre <Link href="/blog/como-solucionar-buffering-cortes-iptv" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">solucionar problemas de buffering en IPTV</Link>.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 text-center text-xs">
           <div className="bg-dark-950 p-4 rounded-xl border border-white/5">

@@ -84,7 +84,7 @@ export default function InstalacionIndexPage() {
             </div>
             <div className="font-bold text-white">Descargar el reproductor</div>
             <p className="text-xs text-gray-400">
-              Instala <Link href="/blog/como-instalar-iptv-smarters-pro-smart-tv-espana" className="text-spanish-gold underline hover:text-white">IPTV Smarters Pro</Link>, <Link href="/blog/tivimate-espana-configuracion-guia-paso-a-paso" className="text-spanish-gold underline hover:text-white">TiviMate</Link> o la app de tu sistema.
+              Instala <Link href="/blog/guia-instalar-iptv-smarters-pro-smart-tv" className="text-spanish-gold underline hover:text-white">IPTV Smarters Pro</Link>, <Link href="/blog/guia-configuracion-tivimate-espana" className="text-spanish-gold underline hover:text-white">TiviMate</Link> o la app de tu sistema.
             </p>
           </div>
 
