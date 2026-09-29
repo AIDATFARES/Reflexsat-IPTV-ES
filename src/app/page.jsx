@@ -21,7 +21,7 @@ import FaqAccordion from '../components/FaqAccordion';
 import { allFaqs } from '../data/faqData';
 
 export const metadata = {
-  title: 'Reflexsat IPTV, la Mejor Suscripción Premium de IPTV en España',
+  title: 'Reflexsat IPTV España — Suscripción IPTV Premium 4K / HD Estable',
   description:
     'Suscripción IPTV en España con más de 35.000 canales en directo 4K, 120.000 VOD, deportes en vivo y servidores anti-buffering. Activación en 5 min. Prueba con 7 días de garantía.',
   alternates: {
@@ -103,7 +103,7 @@ export default function HomePage() {
 
             {/* H1 Main Heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15] drop-shadow-md">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-spanish-red via-spanish-redBright to-spanish-gold">Reflexsat IPTV</span>, la mejor suscripción premium de IPTV en España.
+              Suscripción <span className="text-transparent bg-clip-text bg-gradient-to-r from-spanish-red via-spanish-redBright to-spanish-gold">IPTV Premium</span> en España
             </h1>
 
             {/* Subheading */}
@@ -121,12 +121,14 @@ export default function HomePage() {
                 <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
               </a>
 
-              <Link
-                href="/contacto?plan=prueba-gratis"
+              <a
+                href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20solicitar%20una%20prueba%20gratuita%20de%2024%20horas"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-dark-900/80 hover:bg-dark-800 backdrop-blur-md border border-white/15 hover:border-spanish-gold/40 hover:text-white transition-all duration-200"
               >
                 <span>Solicitar prueba gratis</span>
-              </Link>
+              </a>
             </div>
 
             {/* Stats Row */}

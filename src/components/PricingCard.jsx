@@ -2,6 +2,12 @@ import Link from 'next/link';
 import { Check, Flame, Shield, ArrowRight } from 'lucide-react';
 
 export default function PricingCard({ plan }) {
+  const whatsappUrl = plan.ctaLink?.startsWith('https://wa.me/')
+    ? plan.ctaLink
+    : `https://wa.me/447882781998?text=${encodeURIComponent(
+        `Hola Reflexsat IPTV, deseo contratar el ${plan.name} (${plan.devices} - ${plan.price}€).`
+      )}`;
+
   return (
     <div
       className={`relative flex flex-col justify-between rounded-2xl p-6 sm:p-8 transition-all duration-300 group ${
@@ -65,8 +71,10 @@ export default function PricingCard({ plan }) {
       </div>
 
       <div>
-        <Link
-          href={plan.ctaLink}
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className={`w-full py-3.5 px-6 rounded-xl font-extrabold text-sm text-center flex items-center justify-center gap-2 cursor-pointer btn-interactive ${
             plan.isPopular
               ? 'btn-shine btn-glow-pulse bg-gradient-to-r from-spanish-red to-spanish-redBright hover:from-spanish-redBright hover:to-spanish-red text-white shadow-glow-red hover:shadow-2xl'
@@ -75,7 +83,7 @@ export default function PricingCard({ plan }) {
         >
           <span>{plan.ctaText}</span>
           <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1.5" />
-        </Link>
+        </a>
         <div className="mt-3 text-center text-xs text-gray-400 flex items-center justify-center gap-1.5">
           <Shield className="w-3.5 h-3.5 text-spanish-gold" />
           <span>Garantía de reembolso de 7 días</span>
