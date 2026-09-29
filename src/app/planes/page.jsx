@@ -12,13 +12,11 @@ import {
   ChevronRight,
 } from 'lucide-react';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import PricingCard from '../../components/PricingCard';
+import PricingPlansSection from '../../components/PricingPlansSection';
 import FaqAccordion from '../../components/FaqAccordion';
-import { singleScreenPlans, multiScreenPlans } from '../../data/pricingData';
 import { allFaqs } from '../../data/faqData';
 
 export default function PlanesPage() {
-  const [activeTab, setActiveTab] = useState('single'); // 'single' or 'multi'
 
   // Relevant FAQs for subscription page
   const subscriptionFaqs = allFaqs.filter((f) => f.category === 'suscripcion' || f.category === 'general').slice(0, 5);
@@ -87,41 +85,11 @@ export default function PlanesPage() {
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
           Sin contratos de permanencia ni cuotas ocultas. Activación exprés en 5 minutos compatible con <Link href="/dispositivos" className="text-spanish-gold font-semibold hover:underline">todos tus dispositivos</Link> mediante nuestras <Link href="/instalacion" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">guías paso a paso</Link>. Respaldado por nuestra <Link href="/politica-de-reembolso" className="text-spanish-gold font-bold hover:underline">garantía de devolución de 7 días</Link> o solicita tu <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
         </p>
-
-        {/* Plan Switcher Tab */}
-        <div className="pt-6 flex justify-center">
-          <div className="p-1.5 rounded-2xl bg-dark-950 border border-white/10 flex items-center gap-1 shadow-glass">
-            <button
-              type="button"
-              onClick={() => setActiveTab('single')}
-              className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all ${
-                activeTab === 'single'
-                  ? 'bg-gradient-to-r from-spanish-red to-spanish-redBright text-white shadow-glow-red'
-                  : 'text-gray-400 hover:text-white'
-              }`}
-            >
-              1 Pantalla (Individual)
-            </button>
-            <button
-              type="button"
-              onClick={() => setActiveTab('multi')}
-              className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all ${
-                activeTab === 'multi'
-                  ? 'bg-gradient-to-r from-spanish-red to-spanish-redBright text-white shadow-glow-red'
-                  : 'text-gray-400 hover:text-white'
-              }`}
-            >
-              Multi-Pantallas (Familiar) 👨‍👩‍👧
-            </button>
-          </div>
-        </div>
       </div>
 
-      {/* Plans Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto mb-20">
-        {activeTab === 'single'
-          ? singleScreenPlans.map((plan) => <PricingCard key={plan.id} plan={plan} />)
-          : multiScreenPlans.map((plan) => <PricingCard key={plan.id} plan={plan} />)}
+      {/* Plans Section with Device Tabs */}
+      <div className="mb-20">
+        <PricingPlansSection defaultDevices={1} />
       </div>
 
       {/* Value Proposition Highlights */}

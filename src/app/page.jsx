@@ -16,9 +16,8 @@ import {
   Layers,
   Lock,
 } from 'lucide-react';
-import PricingCard from '../components/PricingCard';
+import PricingPlansSection from '../components/PricingPlansSection';
 import FaqAccordion from '../components/FaqAccordion';
-import { singleScreenPlans, multiScreenPlans } from '../data/pricingData';
 import { allFaqs } from '../data/faqData';
 
 export const metadata = {
@@ -301,28 +300,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Pricing Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
-            {singleScreenPlans.map((plan) => (
-              <PricingCard key={plan.id} plan={plan} />
-            ))}
-          </div>
-
-          {/* Multi-screen CTA Link */}
-          <div className="mt-12 text-center">
-            <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-4 rounded-2xl bg-dark-800/80 border border-white/10 max-w-2xl mx-auto">
-              <div className="text-left text-sm">
-                <span className="font-bold text-white block">¿Quieres ver en varias televisiones a la vez?</span>
-                <span className="text-xs text-gray-400">Descubre nuestros Planes Familiares Multi-pantallas (2, 3 o 4 conexiones simultáneas).</span>
-              </div>
-              <Link
-                href="/planes"
-                className="px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-spanish-red hover:bg-spanish-redBright transition-colors whitespace-nowrap flex-shrink-0"
-              >
-                Ver planes multi-pantalla →
-              </Link>
-            </div>
-          </div>
+          {/* Pricing Plans Section with Device Tabs */}
+          <PricingPlansSection defaultDevices={1} />
         </div>
       </section>
 

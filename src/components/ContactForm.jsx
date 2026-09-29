@@ -6,14 +6,20 @@ import { Send, CheckCircle2, AlertCircle } from 'lucide-react';
 
 export default function ContactForm({ defaultPlan = '' }) {
   const getInitialPlan = (p) => {
-    if (p === 'prueba-gratis' || p === 'prueba') return 'Solicitar prueba gratuita (Demo)';
-    if (p === '3-meses') return 'Plan 3 Meses (30 €)';
-    if (p === '6-meses') return 'Plan 6 Meses (45 €)';
-    if (p === '12-meses') return 'Plan 12 Meses (60 €)';
-    if (p === 'familiar-2') return 'Plan Familiar 2 Pantallas (79 €)';
-    if (p === 'familiar-3') return 'Plan Familiar 3 Pantallas (109 €)';
-    if (p === 'familiar-4') return 'Plan Familiar 4 Pantallas (139 €)';
-    return p || 'Plan 12 Meses (60 €)';
+    if (p === 'prueba-gratis' || p === 'prueba') return 'Solicitar prueba gratuita (Demo 24h)';
+    if (p === '3-meses') return 'Plan 1 Dispositivo — 3 Meses (30 €)';
+    if (p === '6-meses') return 'Plan 1 Dispositivo — 6 Meses (45 €)';
+    if (p === '12-meses') return 'Plan 1 Dispositivo — 12 Meses (60 €)';
+    if (p === '2-disp-3m') return 'Plan 2 Dispositivos — 3 Meses (45 €)';
+    if (p === '2-disp-6m') return 'Plan 2 Dispositivos — 6 Meses (60 €)';
+    if (p === 'familiar-2') return 'Plan 2 Dispositivos — 12 Meses (79 €)';
+    if (p === '3-disp-3m') return 'Plan 3 Dispositivos — 3 Meses (60 €)';
+    if (p === '3-disp-6m') return 'Plan 3 Dispositivos — 6 Meses (85 €)';
+    if (p === 'familiar-3') return 'Plan 3 Dispositivos — 12 Meses (109 €)';
+    if (p === '4-disp-3m') return 'Plan 4 Dispositivos — 3 Meses (75 €)';
+    if (p === '4-disp-6m') return 'Plan 4 Dispositivos — 6 Meses (105 €)';
+    if (p === 'familiar-4') return 'Plan 4 Dispositivos — 12 Meses (139 €)';
+    return p || 'Plan 1 Dispositivo — 12 Meses (60 €)';
   };
 
   const [formData, setFormData] = useState({
@@ -137,13 +143,27 @@ export default function ContactForm({ defaultPlan = '' }) {
           onChange={(e) => setFormData({ ...formData, plan: e.target.value })}
           className="w-full px-4 py-3 rounded-xl bg-dark-900/90 border border-white/10 text-white text-sm focus:outline-none focus:border-spanish-red transition-colors"
         >
-          <option value="Solicitar prueba gratuita (Demo)">Solicitar prueba gratuita (Demo 24h)</option>
-          <option value="Plan 3 Meses (30 €)">Plan 3 Meses (30,00 €)</option>
-          <option value="Plan 6 Meses (45 €)">Plan 6 Meses (45,00 €)</option>
-          <option value="Plan 12 Meses (60 €)">Plan 12 Meses — 1 Pantalla (60,00 €)</option>
-          <option value="Plan Familiar 2 Pantallas (79 €)">Plan Familiar 2 Pantallas (79,00 €)</option>
-          <option value="Plan Familiar 3 Pantallas (109 €)">Plan Familiar 3 Pantallas (109,00 €)</option>
-          <option value="Plan Familiar 4 Pantallas (139 €)">Plan Familiar 4 Pantallas (139,00 €)</option>
+          <option value="Solicitar prueba gratuita (Demo 24h)">Solicitar prueba gratuita (Demo 24h)</option>
+          <optgroup label="1 Dispositivo">
+            <option value="Plan 1 Dispositivo — 3 Meses (30 €)">1 Dispositivo — 3 Meses (30,00 €)</option>
+            <option value="Plan 1 Dispositivo — 6 Meses (45 €)">1 Dispositivo — 6 Meses (45,00 €)</option>
+            <option value="Plan 1 Dispositivo — 12 Meses (60 €)">1 Dispositivo — 12 Meses (60,00 €)</option>
+          </optgroup>
+          <optgroup label="2 Dispositivos (Pack Dúo)">
+            <option value="Plan 2 Dispositivos — 3 Meses (45 €)">2 Dispositivos — 3 Meses (45,00 €)</option>
+            <option value="Plan 2 Dispositivos — 6 Meses (60 €)">2 Dispositivos — 6 Meses (60,00 €)</option>
+            <option value="Plan 2 Dispositivos — 12 Meses (79 €)">2 Dispositivos — 12 Meses (79,00 €)</option>
+          </optgroup>
+          <optgroup label="3 Dispositivos (Pack Familiar)">
+            <option value="Plan 3 Dispositivos — 3 Meses (60 €)">3 Dispositivos — 3 Meses (60,00 €)</option>
+            <option value="Plan 3 Dispositivos — 6 Meses (85 €)">3 Dispositivos — 6 Meses (85,00 €)</option>
+            <option value="Plan 3 Dispositivos — 12 Meses (109 €)">3 Dispositivos — 12 Meses (109,00 €)</option>
+          </optgroup>
+          <optgroup label="4 Dispositivos (Máximo Ahorro)">
+            <option value="Plan 4 Dispositivos — 3 Meses (75 €)">4 Dispositivos — 3 Meses (75,00 €)</option>
+            <option value="Plan 4 Dispositivos — 6 Meses (105 €)">4 Dispositivos — 6 Meses (105,00 €)</option>
+            <option value="Plan 4 Dispositivos — 12 Meses (139 €)">4 Dispositivos — 12 Meses (139,00 €)</option>
+          </optgroup>
           <option value="Consulta técnica / Duda">Consulta técnica / Duda previa</option>
         </select>
       </div>
