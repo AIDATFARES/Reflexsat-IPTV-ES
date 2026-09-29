@@ -18,11 +18,11 @@ export default function BlogIndexPage() {
   const regularArticles = filteredArticles.filter((a) => a.slug !== featuredArticle.slug);
 
   return (
-    <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-4 pb-12 sm:pt-6 sm:pb-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Breadcrumbs items={[{ label: 'Blog & Noticias IPTV', href: '/blog' }]} />
 
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+      <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-4">
         <span className="inline-block px-3.5 py-1 rounded-full text-xs font-extrabold bg-spanish-gold/10 text-spanish-gold border border-spanish-gold/20 uppercase tracking-widest">
           Consejos, Guías y Novedades
         </span>

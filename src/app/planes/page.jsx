@@ -67,7 +67,7 @@ export default function PlanesPage() {
   };
 
   return (
-    <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-4 pb-12 sm:pt-6 sm:pb-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
@@ -76,7 +76,7 @@ export default function PlanesPage() {
       <Breadcrumbs items={[{ label: 'Planes y Precios', href: '/planes' }]} />
 
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+      <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-4">
         <span className="inline-block px-3.5 py-1 rounded-full text-xs font-extrabold bg-spanish-red/10 text-spanish-redBright border border-spanish-red/20 uppercase tracking-widest">
           Tarifas Transparentes 2026
         </span>

@@ -74,7 +74,7 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 1. HERO SECTION WITH CINEMATIC TV BACKGROUND                   */}
       {/* ============================================================== */}
-      <section className="relative min-h-[92vh] flex items-center justify-center pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center pt-4 pb-8 sm:pt-6 sm:pb-10 lg:pt-8 lg:pb-12 overflow-hidden">
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -171,8 +171,8 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 2. COMPATIBLE APPS & HARDWARE BANNER                           */}
       {/* ============================================================== */}
-      <section className="py-12 bg-dark-950 border-y border-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      <section className="py-8 sm:py-10 bg-dark-950 border-y border-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
           <p className="text-xs sm:text-sm font-bold uppercase tracking-widest text-spanish-gold">
             Compatibilidad Universal Multiplataforma
           </p>
@@ -212,9 +212,9 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 3. KEY ADVANTAGES / WHY CHOOSE REFLEXSAT                       */}
       {/* ============================================================== */}
-      <section className="py-20 lg:py-28 relative">
+      <section className="py-10 sm:py-14 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-4">
             <span className="text-xs font-extrabold uppercase tracking-widest text-spanish-redBright">
               Ventajas Exclusivas
             </span>
@@ -286,9 +286,9 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 4. PRICING PREVIEW SECTION                                     */}
       {/* ============================================================== */}
-      <section id="planes" className="py-20 lg:py-28 relative">
+      <section id="planes" className="py-10 sm:py-14 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-4">
             <span className="text-xs font-extrabold uppercase tracking-widest text-spanish-gold">
               Precios Transparentes
             </span>
@@ -329,7 +329,7 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 5. SPORTS & FOOTBALL SHOWCASE SECTION                          */}
       {/* ============================================================== */}
-      <section className="py-20 bg-dark-950 border-y border-white/5 relative overflow-hidden">
+      <section className="py-10 sm:py-14 bg-dark-950 border-y border-white/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
@@ -406,9 +406,9 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 6. HOW IT WORKS IN 3 STEPS                                     */}
       {/* ============================================================== */}
-      <section id="como-funciona" className="py-20 bg-dark-950 border-t border-white/5 relative">
+      <section id="como-funciona" className="py-10 sm:py-14 bg-dark-950 border-t border-white/5 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-4">
             <span className="text-xs font-extrabold uppercase tracking-widest text-spanish-redBright">
               Fácil y Rápido
             </span>
@@ -466,9 +466,9 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 7. COMPARISON TABLE: REFLEXSAT VS TRADITIONAL                  */}
       {/* ============================================================== */}
-      <section className="py-20 lg:py-28 relative">
+      <section className="py-10 sm:py-14 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-4">
             <span className="text-xs font-extrabold uppercase tracking-widest text-spanish-gold">
               Comparativa de Calidad
             </span>
@@ -558,9 +558,9 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 8. CLIENT TESTIMONIALS (SPAIN)                                 */}
       {/* ============================================================== */}
-      <section className="py-20 bg-dark-950 border-y border-white/5 relative">
+      <section className="py-10 sm:py-14 bg-dark-950 border-y border-white/5 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-4">
             <span className="text-xs font-extrabold uppercase tracking-widest text-spanish-redBright">
               Opiniones Reales
             </span>
@@ -606,9 +606,9 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 9. FAQ ACCORDION SECTION                                       */}
       {/* ============================================================== */}
-      <section className="py-20 lg:py-28 relative">
+      <section className="py-10 sm:py-14 relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 space-y-4">
+          <div className="text-center mb-8 sm:mb-10 space-y-4">
             <span className="text-xs font-extrabold uppercase tracking-widest text-spanish-gold">
               Resolvemos tus Dudas
             </span>
@@ -623,7 +623,7 @@ export default function HomePage() {
 
           <FaqAccordion items={topFaqs} includeSchema={true} />
 
-          <div className="mt-10 text-center">
+          <div className="mt-8 text-center">
             <Link
               href="/faq"
               className="inline-flex items-center gap-2 text-sm font-bold text-spanish-redBright hover:underline"
@@ -637,7 +637,7 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 10. FINAL CONVERTING CTA BANNER                                */}
       {/* ============================================================== */}
-      <section className="py-20 bg-gradient-to-b from-dark-900 via-spanish-redDark/30 to-dark-950 border-t border-white/10 relative text-center">
+      <section className="py-12 sm:py-16 bg-gradient-to-b from-dark-900 via-spanish-redDark/30 to-dark-950 border-t border-white/10 relative text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-extrabold bg-spanish-gold/20 text-spanish-gold border border-spanish-gold/30">
             ¡Comienza en menos de 5 minutos!
