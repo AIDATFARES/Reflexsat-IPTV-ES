@@ -125,9 +125,9 @@ export default function ContactForm({ defaultPlan = '' }) {
           onChange={(e) => setFormData({ ...formData, plan: e.target.value })}
           className="w-full px-4 py-3 rounded-xl bg-dark-900/90 border border-white/10 text-white text-sm focus:outline-none focus:border-spanish-red transition-colors"
         >
-          <option value="Plan 3 Meses (29 €)">Plan 3 Meses (29,00 €)</option>
-          <option value="Plan 6 Meses (39 €)">Plan 6 Meses (39,00 €)</option>
-          <option value="Plan 12 Meses (49 €)">Plan 12 Meses — 1 Pantalla (49,00 €)</option>
+          <option value="Plan 3 Meses (30 €)">Plan 3 Meses (30,00 €)</option>
+          <option value="Plan 6 Meses (45 €)">Plan 6 Meses (45,00 €)</option>
+          <option value="Plan 12 Meses (60 €)">Plan 12 Meses — 1 Pantalla (60,00 €)</option>
           <option value="Plan Familiar 2 Pantallas (79 €)">Plan Familiar 2 Pantallas (79,00 €)</option>
           <option value="Plan Familiar 3 Pantallas (109 €)">Plan Familiar 3 Pantallas (109,00 €)</option>
           <option value="Plan Familiar 4 Pantallas (139 €)">Plan Familiar 4 Pantallas (139,00 €)</option>

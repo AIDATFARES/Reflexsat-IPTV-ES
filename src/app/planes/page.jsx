@@ -39,7 +39,7 @@ export default function PlanesPage() {
       {
         '@type': 'Offer',
         name: 'Plan 3 Meses',
-        price: '29.00',
+        price: '30.00',
         priceCurrency: 'EUR',
         availability: 'https://schema.org/InStock',
         priceValidUntil: '2026-12-31',
@@ -48,7 +48,7 @@ export default function PlanesPage() {
       {
         '@type': 'Offer',
         name: 'Plan 6 Meses',
-        price: '39.00',
+        price: '45.00',
         priceCurrency: 'EUR',
         availability: 'https://schema.org/InStock',
         priceValidUntil: '2026-12-31',
@@ -57,7 +57,7 @@ export default function PlanesPage() {
       {
         '@type': 'Offer',
         name: 'Plan 12 Meses',
-        price: '49.00',
+        price: '60.00',
         priceCurrency: 'EUR',
         availability: 'https://schema.org/InStock',
         priceValidUntil: '2026-12-31',
