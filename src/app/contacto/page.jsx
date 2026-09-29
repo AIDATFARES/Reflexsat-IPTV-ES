@@ -88,6 +88,32 @@ export default function ContactoPage({ searchParams }) {
             </div>
           </div>
 
+          {/* WhatsApp Direct Support Card */}
+          <a
+            href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20asistencia%20inmediata"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block p-5 rounded-2xl bg-gradient-to-r from-[#25D366]/20 via-[#25D366]/10 to-transparent border border-[#25D366]/40 hover:border-[#25D366] transition-all group shadow-lg"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3.5">
+                <div className="w-12 h-12 rounded-xl bg-[#25D366] text-white flex items-center justify-center shadow-lg shadow-[#25D366]/30 flex-shrink-0 group-hover:scale-105 transition-transform">
+                  <MessageCircle className="w-6 h-6 fill-current" />
+                </div>
+                <div>
+                  <div className="font-bold text-white text-base flex items-center gap-2">
+                    <span>Soporte por WhatsApp</span>
+                    <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+                  </div>
+                  <div className="text-xs text-gray-300 font-mono mt-0.5">+44 7882 781998</div>
+                </div>
+              </div>
+              <span className="text-xs font-bold text-[#25D366] bg-[#25D366]/10 border border-[#25D366]/20 px-3 py-1.5 rounded-lg group-hover:bg-[#25D366] group-hover:text-white transition-all">
+                Chatear ahora →
+              </span>
+            </div>
+          </a>
+
           {/* Quick Help Navigation Box */}
           <div className="glass-card rounded-2xl p-6 border border-white/10 space-y-4 bg-dark-900/60">
             <h3 className="text-base font-bold text-white">¿Buscas una solución rápida?</h3>

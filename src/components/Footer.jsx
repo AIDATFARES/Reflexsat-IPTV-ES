@@ -187,6 +187,17 @@ export default function Footer() {
                 <div className="text-spanish-gold font-medium">Menos de 10 minutos</div>
               </li>
               <li>
+                <div className="text-xs text-gray-500">WhatsApp oficial 24/7:</div>
+                <a
+                  href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20m%C3%A1s%20informaci%C3%B3n"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-green-400 hover:text-green-300 font-semibold mt-1 font-mono text-sm"
+                >
+                  <span>+44 7882 781998</span>
+                </a>
+              </li>
+              <li>
                 <div className="text-xs text-gray-500">Consulta comercial o técnica:</div>
                 <Link
                   href="/contacto"
