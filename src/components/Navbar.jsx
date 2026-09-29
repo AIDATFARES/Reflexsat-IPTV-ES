@@ -52,13 +52,15 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group" aria-label="Reflexsat IPTV Inicio">
-            <div className="relative w-48 h-12 transition-transform duration-200 group-hover:scale-[1.02]">
+            <div className="flex items-center transition-transform duration-200 group-hover:scale-[1.02]">
               <Image
                 src="/images/logo.svg"
                 alt="Reflexsat IPTV España"
-                fill
+                width={200}
+                height={50}
                 priority
-                className="object-contain"
+                className="w-48 h-auto object-contain"
+                style={{ width: '190px', height: 'auto', maxHeight: '48px' }}
               />
             </div>
           </Link>
@@ -114,12 +116,14 @@ export default function Navbar() {
       >
         <div>
           <div className="flex items-center justify-between pb-6 border-b border-white/10">
-            <div className="relative w-36 h-9">
+            <div className="flex items-center">
               <Image
                 src="/images/logo.svg"
                 alt="Reflexsat IPTV"
-                fill
-                className="object-contain"
+                width={160}
+                height={40}
+                className="w-36 h-auto object-contain"
+                style={{ width: '150px', height: 'auto', maxHeight: '40px' }}
               />
             </div>
             <button
