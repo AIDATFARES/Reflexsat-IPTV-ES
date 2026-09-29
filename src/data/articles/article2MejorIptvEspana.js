@@ -164,7 +164,7 @@ La <strong>Nvidia Shield TV Pro</strong> continúa siendo el referente indiscuti
 
 <h3>5.4. Procesadores de Smart TV (Samsung Tizen y LG webOS)</h3>
 <p>
-Los televisores de gama media y alta de Samsung (paneles Neo QLED y OLED con procesadores Neural Quantum) y LG (paneles OLED con procesadores α9 Gen 6/7) disponen de potencia de sobra para ejecutar aplicaciones como <a href="/instalacion/smart-tv">IPTV Smarters Pro</a> de forma nativa sin necesidad de conectar ningún aparato externo. En modelos de gama de entrada con más de cuatro años de antigüedad, sin embargo, la memoria RAM reducida puede provocar cierta lentitud al navegar por menús extensos, siendo aconsejable añadir un Firestick o TV Box auxiliar.
+Los televisores de gama media y alta de Samsung (paneles Neo QLED y OLED con procesadores Neural Quantum) y LG (paneles OLED con procesadores α9 Gen 6/7) disponen de potencia de sobra para ejecutar aplicaciones como <a href="/blog/guia-instalar-iptv-smarters-pro-smart-tv">IPTV Smarters Pro</a> de forma nativa sin necesidad de conectar ningún aparato externo. En modelos de gama de entrada con más de cuatro años de antigüedad, sin embargo, la memoria RAM reducida puede provocar cierta lentitud al navegar por menús extensos, siendo aconsejable añadir un Firestick o TV Box auxiliar.
 </p>
 
 <h2>6. Tabla Comparativa Técnica: Proveedores Gratuitos / Low-Cost vs Reflexsat IPTV</h2>
@@ -250,7 +250,7 @@ Canales temáticos dedicados a los mejores géneros: canales de cine ininterrump
 La versatilidad de <a href="/">Reflexsat IPTV</a> te permite disfrutar de tu contenido en prácticamente cualquier pantalla conectada a Internet, tanto en casa como en tus desplazamientos vacacionales. Disponemos de guías detalladas para cada plataforma en nuestra sección de <a href="/dispositivos">dispositivos compatibles</a>:
 </p>
 <ul>
-  <li><strong>Smart TV de Salón:</strong> Aplicaciones recomendadas como <a href="/instalacion/smart-tv">IPTV Smarters Pro</a>, IBO Player Pro, Flix IPTV o Smart IPTV en pantallas Samsung Tizen y LG webOS.</li>
+  <li><strong>Smart TV de Salón:</strong> Aplicaciones recomendadas como <a href="/blog/guia-instalar-iptv-smarters-pro-smart-tv">IPTV Smarters Pro</a>, IBO Player Pro, Flix IPTV o Smart IPTV en pantallas Samsung Tizen y LG webOS.</li>
   <li><strong>Dispositivos Amazon Fire TV:</strong> Toda la familia de dispositivos Firestick (Lite, 4K, 4K Max y Fire TV Cube) ofreciendo un rendimiento asombroso junto a <a href="/blog/guia-configuracion-tivimate-espana">TiviMate IPTV Player</a>.</li>
   <li><strong>Smartphones y Tablets (Android e iOS):</strong> Lleva tu televisión en el bolsillo instalando Smarters Lite o XCIPTV en terminales Android y Smarters Player o GSE Smart IPTV en dispositivos Apple iPhone y iPad.</li>
   <li><strong>Ordenadores Personales (Windows y macOS):</strong> Visualización cómoda mediante software nativo como IPTV Smarters Pro para PC, MyIPTV Player o el versátil reproductor multimedia VLC Media Player.</li>
