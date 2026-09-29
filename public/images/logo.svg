@@ -1,0 +1,57 @@
+<svg viewBox="0 0 340 70" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Satellite / Signal Wave Icon -->
+  <defs>
+    <linearGradient id="esGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D61F2C"/>
+      <stop offset="50%" stop-color="#F1BF00"/>
+      <stop offset="100%" stop-color="#AA151B"/>
+    </linearGradient>
+    <linearGradient id="glowRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D61F2C" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#AA151B" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon container -->
+  <g transform="translate(6, 6)">
+    <!-- Base rounded hex/shield -->
+    <rect x="0" y="0" width="58" height="58" rx="16" fill="#0D0D0D" stroke="#262626" stroke-width="1.5"/>
+    <rect x="0" y="0" width="58" height="58" rx="16" fill="url(#glowRed)" opacity="0.15"/>
+    
+    <!-- Satellite dish base & curved signal beams -->
+    <!-- Signal arcs -->
+    <path d="M 40 18 A 16 16 0 0 1 48 34" stroke="#F1BF00" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 34 22 A 10 10 0 0 1 39 32" stroke="#FFC400" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    
+    <!-- Dish curve -->
+    <path d="M 18 19 C 24 23 27 33 21 41" stroke="#D61F2C" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    
+    <!-- Central pulse / beam emitter -->
+    <circle cx="28" cy="29" r="4.5" fill="#F1BF00"/>
+    <line x1="20" y1="36" x2="28" y2="29" stroke="#E5E7EB" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Dish mount stand -->
+    <path d="M 14 43 L 23 37 L 27 45" stroke="#9CA3AF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Live indicator dot -->
+    <circle cx="48" cy="14" r="3.5" fill="#D61F2C"/>
+  </g>
+
+  <!-- Typography -->
+  <!-- REFLEXSAT -->
+  <text x="76" y="38" font-family="'Inter', 'Montserrat', -apple-system, sans-serif" font-size="25" font-weight="900" letter-spacing="0.5" fill="#FFFFFF">
+    REFLEX<tspan fill="#D61F2C">SAT</tspan>
+  </text>
+  
+  <!-- IPTV Sub-badge with Spanish flag accent -->
+  <g transform="translate(76, 44)">
+    <!-- Flag strip -->
+    <rect x="0" y="2" width="4" height="12" rx="1" fill="#AA151B"/>
+    <rect x="4" y="2" width="6" height="12" rx="0" fill="#F1BF00"/>
+    <rect x="10" y="2" width="4" height="12" rx="1" fill="#AA151B"/>
+    
+    <text x="20" y="12" font-family="'Inter', -apple-system, sans-serif" font-size="11" font-weight="800" letter-spacing="3" fill="#F1BF00">
+      IPTV ESPAÑA
+    </text>
+  </g>
+</svg>

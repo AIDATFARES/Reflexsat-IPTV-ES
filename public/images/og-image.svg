@@ -1,0 +1,75 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  
+  <defs>
+    <radialGradient id="glowRedBg" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#AA151B" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGoldBg" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#F1BF00" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#glowRedBg)"/>
+  <rect width="1200" height="630" fill="url(#glowGoldBg)"/>
+
+  <!-- Grid overlay -->
+  <g opacity="0.08" stroke="#FFFFFF" stroke-width="1">
+    <path d="M0 70 H1200 M0 140 H1200 M0 210 H1200 M0 280 H1200 M0 350 H1200 M0 420 H1200 M0 490 H1200 M0 560 H1200"/>
+    <path d="M100 0 V630 M200 0 V630 M300 0 V630 M400 0 V630 M500 0 V630 M600 0 V630 M700 0 V630 M800 0 V630 M900 0 V630 M1000 0 V630 M1100 0 V630"/>
+  </g>
+
+  <!-- Spanish Flag Accent Pill -->
+  <g transform="translate(100, 100)">
+    <rect width="240" height="42" rx="21" fill="#171717" stroke="#333333" stroke-width="1.5"/>
+    <rect x="20" y="14" width="8" height="14" rx="2" fill="#D61F2C"/>
+    <rect x="30" y="14" width="10" height="14" rx="1" fill="#F1BF00"/>
+    <rect x="42" y="14" width="8" height="14" rx="2" fill="#D61F2C"/>
+    <text x="60" y="27" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#E5E7EB" letter-spacing="1.5">
+      IPTV ESPAÑA 2026
+    </text>
+  </g>
+
+  <!-- Big Title -->
+  <text x="100" y="230" font-family="'Inter', sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">
+    REFLEX<tspan fill="#D61F2C">SAT</tspan> IPTV
+  </text>
+  
+  <text x="100" y="295" font-family="'Inter', sans-serif" font-size="36" font-weight="800" fill="#F1BF00">
+    Suscripción IPTV Premium en España
+  </text>
+
+  <text x="100" y="360" font-family="'Inter', sans-serif" font-size="22" font-weight="500" fill="#9CA3AF">
+    Más de 35.000 canales en directo 4K/HD • 90.000 películas y series VOD
+  </text>
+  <text x="100" y="395" font-family="'Inter', sans-serif" font-size="22" font-weight="500" fill="#9CA3AF">
+    Servidores estables anti-buffering en España y Europa • Activación en 5 minutos
+  </text>
+
+  <!-- Feature Tags -->
+  <g transform="translate(100, 470)">
+    <!-- Tag 1 -->
+    <rect x="0" y="0" width="220" height="54" rx="14" fill="#141414" stroke="#AA151B" stroke-width="1.5"/>
+    <text x="24" y="33" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">⚽ Todo el Fútbol 4K</text>
+    
+    <!-- Tag 2 -->
+    <rect x="240" y="0" width="230" height="54" rx="14" fill="#141414" stroke="#262626" stroke-width="1.5"/>
+    <text x="264" y="33" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">📺 Smart TV &amp; Fire Stick</text>
+    
+    <!-- Tag 3 -->
+    <rect x="490" y="0" width="210" height="54" rx="14" fill="#141414" stroke="#262626" stroke-width="1.5"/>
+    <text x="514" y="33" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">⚡ Sin Permanencia</text>
+
+    <!-- Tag 4 -->
+    <rect x="720" y="0" width="240" height="54" rx="14" fill="#141414" stroke="#F1BF00" stroke-width="1.5"/>
+    <text x="744" y="33" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#F1BF00">⭐ Garantía 7 Días</text>
+  </g>
+
+  <!-- Domain Branding -->
+  <text x="100" y="580" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#71717A">
+    https://www.reflexsat.es/ — El servicio IPTV líder en España
+  </text>
+</svg>

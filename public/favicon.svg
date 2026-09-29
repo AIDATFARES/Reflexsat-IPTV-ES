@@ -1,0 +1,31 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#070707"/>
+    </linearGradient>
+    <linearGradient id="favGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D61F2C"/>
+      <stop offset="100%" stop-color="#AA151B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="url(#favBg)" stroke="#AA151B" stroke-width="2"/>
+  
+  <!-- Signal waves -->
+  <path d="M 44 19 A 18 18 0 0 1 52 36" stroke="#F1BF00" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M 37 24 A 11 11 0 0 1 42 35" stroke="#FFC400" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Satellite Dish Curve -->
+  <path d="M 19 21 C 26 25 29 36 22 45" stroke="#D61F2C" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Focal Receiver -->
+  <circle cx="31" cy="32" r="5" fill="#F1BF00"/>
+  <line x1="22" y1="40" x2="31" y2="32" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Support mount -->
+  <path d="M 15 48 L 24 41 L 28 50" stroke="#9CA3AF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Glowing notification dot -->
+  <circle cx="51" cy="15" r="3.5" fill="#D61F2C"/>
+</svg>
