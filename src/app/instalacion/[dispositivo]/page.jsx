@@ -87,7 +87,7 @@ export default function DispositivoInstalacionPage({ params }) {
         </h1>
         <div className="w-20 h-1 spanish-flag-line" />
         <p className="text-gray-300 text-base leading-relaxed max-w-3xl">
-          {device.shortDesc} Sigue los pasos que detallamos a continuación para conectar tu <Link href="/planes" className="text-spanish-gold font-bold hover:underline">suscripción de Reflexsat IPTV</Link> o consulta todos los <Link href="/dispositivos" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">dispositivos compatibles</Link> si utilizas varios aparatos en tu hogar.
+          {device.shortDesc} Sigue los pasos que detallamos a continuación para conectar tu <Link href="/planes" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white">suscripción de Reflexsat IPTV</Link> o consulta todos los <Link href="/dispositivos" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">dispositivos compatibles</Link> si utilizas varios aparatos en tu hogar.
         </p>
       </div>
 
@@ -206,7 +206,7 @@ export default function DispositivoInstalacionPage({ params }) {
               <span className="text-xs font-bold text-gray-200 group-hover:text-white line-clamp-1">
                 {od.name}
               </span>
-              <ChevronRight className="w-4 h-4 text-gray-500 group-hover:text-spanish-redBright flex-shrink-0" />
+              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-spanish-redBright flex-shrink-0" />
             </Link>
           ))}
         </div>
@@ -218,7 +218,7 @@ export default function DispositivoInstalacionPage({ params }) {
           ¿Aún no tienes tu suscripción de Reflexsat IPTV?
         </h2>
         <p className="text-sm text-gray-300 max-w-lg mx-auto">
-          Elige entre nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de 3, 6 o 12 meses</Link> y recibe tus claves en 5 minutos para activar tu televisor, o pide tu <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
+          Elige entre nuestros <Link href="/planes" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white">planes de 3, 6 o 12 meses</Link> y recibe tus claves en 5 minutos para activar tu televisor, o pide tu <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
         </p>
         <div className="pt-2">
           <Link

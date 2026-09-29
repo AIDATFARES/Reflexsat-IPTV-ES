@@ -108,7 +108,7 @@ export default function HomePage() {
 
             {/* Subheading */}
             <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed font-normal max-w-3xl mx-auto drop-shadow">
-              Accede a más de <strong>35.000 canales en directo en 4K / Full HD</strong> sin cortes mediante nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción IPTV</Link>, junto a más de <strong>120.000 películas y series VOD</strong>. Todo el deporte y cine en tu <Link href="/instalacion/samsung-smart-tv" className="text-gray-200 underline decoration-white/30 hover:text-white">Smart TV</Link>, <Link href="/instalacion/fire-tv-stick" className="text-gray-200 underline decoration-white/30 hover:text-white">Fire Stick</Link> o <Link href="/dispositivos" className="text-spanish-gold hover:underline">dispositivos compatibles</Link>.
+              Accede a más de <strong>35.000 canales en directo en 4K / Full HD</strong> sin cortes mediante nuestros <Link href="/planes" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">planes de suscripción IPTV</Link>, junto a más de <strong>120.000 películas y series VOD</strong>. Todo el deporte y cine en tu <Link href="/instalacion/samsung-smart-tv" className="text-gray-200 underline decoration-white/30 hover:text-white">Smart TV</Link>, <Link href="/instalacion/fire-tv-stick" className="text-gray-200 underline decoration-white/30 hover:text-white">Fire Stick</Link> o <Link href="/dispositivos" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">dispositivos compatibles</Link>.
             </p>
 
             {/* CTAs */}
@@ -180,7 +180,7 @@ export default function HomePage() {
           </h2>
           <div className="w-24 h-1 spanish-flag-line mx-auto" />
           <p className="text-sm text-gray-400 max-w-2xl mx-auto">
-            Configuración ultrarrápida mediante <strong>Xtream Codes API</strong> y <strong>enlace M3U</strong>. Sigue nuestras <Link href="/instalacion" className="text-spanish-gold font-semibold hover:underline">guías de instalación paso a paso</Link> para cada uno de los <Link href="/dispositivos" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">dispositivos compatibles</Link>.
+            Configuración ultrarrápida mediante <strong>Xtream Codes API</strong> y <strong>enlace M3U</strong>. Sigue nuestras <Link href="/instalacion" className="text-spanish-gold font-semibold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">guías de instalación paso a paso</Link> para cada uno de los <Link href="/dispositivos" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">dispositivos compatibles</Link>.
           </p>
 
           {/* App Pills Grid */}
@@ -222,7 +222,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Diseñado pensando específicamente en las necesidades del usuario español y europeo: servidores dedicados para ver televisión sin cortes con nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes recomendados</Link> y <Link href="/contacto" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">soporte técnico 24/7</Link>.
+              Diseñado pensando específicamente en las necesidades del usuario español y europeo: servidores dedicados para ver televisión sin cortes con nuestros <Link href="/planes" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">planes recomendados</Link> y <Link href="/contacto" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">soporte técnico 24/7</Link>.
             </p>
           </div>
 
@@ -296,7 +296,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Planes claros sin costes ocultos. Activación rápida en 5 minutos tras el pago seguro. Respaldados por nuestra <Link href="/politica-de-reembolso" className="text-spanish-gold font-bold hover:underline">garantía incondicional de reembolso de 7 días</Link> y <Link href="/contacto" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">asistencia técnica personalizada</Link>.
+              Planes claros sin costes ocultos. Activación rápida en 5 minutos tras el pago seguro. Respaldados por nuestra <Link href="/politica-de-reembolso" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">garantía incondicional de reembolso de 7 días</Link> y <Link href="/contacto" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">asistencia técnica personalizada</Link>.
             </p>
           </div>
 
@@ -321,7 +321,7 @@ export default function HomePage() {
               </h2>
               <div className="w-20 h-1 spanish-flag-line" />
               <p className="text-gray-300 text-base leading-relaxed">
-                Olvídate de los desfases y los cortes justo en el momento del gol. Nuestra red de servidores optimizada para España te asegura la mejor cobertura deportiva con nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes IPTV para eventos en vivo</Link>. También puedes consultar nuestra guía sobre <Link href="/blog/como-solucionar-buffering-cortes-iptv" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">cómo evitar el buffering en IPTV</Link>.
+                Olvídate de los desfases y los cortes justo en el momento del gol. Nuestra red de servidores optimizada para España te asegura la mejor cobertura deportiva con nuestros <Link href="/planes" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">planes IPTV para eventos en vivo</Link>. También puedes consultar nuestra guía sobre <Link href="/blog/como-solucionar-buffering-cortes-iptv" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">cómo evitar el buffering en IPTV</Link>.
               </p>
 
               <div className="grid grid-cols-2 gap-3 text-sm text-gray-200">
@@ -396,7 +396,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              No necesitas ningún tipo de experiencia previa. En menos de 5 minutos estarás disfrutando de toda la programación en tu televisor consultando nuestras <Link href="/instalacion" className="text-spanish-gold font-bold hover:underline">guías de instalación ilustradas</Link>.
+              No necesitas ningún tipo de experiencia previa. En menos de 5 minutos estarás disfrutando de toda la programación en tu televisor consultando nuestras <Link href="/instalacion" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">guías de instalación ilustradas</Link>.
             </p>
           </div>
 
@@ -446,7 +446,7 @@ export default function HomePage() {
           <div className="mt-12 text-center">
             <Link
               href="/instalacion"
-              className="inline-flex items-center gap-2 text-sm font-bold text-spanish-gold hover:underline"
+              className="inline-flex items-center gap-2 text-sm font-bold text-spanish-gold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white"
             >
               <span>Consulta las guías de instalación paso a paso para cada dispositivo →</span>
             </Link>
@@ -468,7 +468,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Comprueba la diferencia de contratar un <Link href="/planes" className="text-spanish-gold font-bold hover:underline">servicio IPTV profesional</Link> frente a listas inestables o gratuitas. Si tienes dudas sobre servidores, consulta nuestras <Link href="/faq" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">preguntas frecuentes</Link>.
+              Comprueba la diferencia de contratar un <Link href="/planes" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">servicio IPTV profesional</Link> frente a listas inestables o gratuitas. Si tienes dudas sobre servidores, consulta nuestras <Link href="/faq" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">preguntas frecuentes</Link>.
             </p>
           </div>
 
@@ -481,7 +481,7 @@ export default function HomePage() {
                     <th className="py-5 px-6 font-extrabold text-spanish-redBright bg-spanish-red/10 text-center">
                       Reflexsat IPTV 🇪🇸
                     </th>
-                    <th className="py-5 px-6 font-semibold text-gray-500 text-center">
+                    <th className="py-5 px-6 font-semibold text-gray-400 text-center">
                       Proveedores genéricos
                     </th>
                   </tr>
@@ -560,7 +560,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              La satisfacción de miles de usuarios en toda España respalda la estabilidad y atención de <strong>Reflexsat IPTV</strong>. Descubre por qué eligen nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de 3, 6 y 12 meses</Link>.
+              La satisfacción de miles de usuarios en toda España respalda la estabilidad y atención de <strong>Reflexsat IPTV</strong>. Descubre por qué eligen nuestros <Link href="/planes" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">planes de 3, 6 y 12 meses</Link>.
             </p>
           </div>
 
@@ -583,7 +583,7 @@ export default function HomePage() {
                 </div>
                 <div className="pt-3 border-t border-white/5">
                   <div className="font-bold text-white text-sm">{test.name}</div>
-                  <div className="text-xs text-gray-500 flex items-center justify-between">
+                  <div className="text-xs text-gray-400 flex items-center justify-between">
                     <span>📍 {test.city}, España</span>
                     <span className="text-spanish-gold">{test.plan}</span>
                   </div>
@@ -608,7 +608,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 spanish-flag-line mx-auto" />
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Información clara sobre <Link href="/dispositivos" className="text-spanish-gold hover:underline">compatibilidad</Link>, <Link href="/instalacion" className="text-spanish-gold hover:underline">activación</Link>, <Link href="/planes" className="text-spanish-gold hover:underline">formas de pago</Link> y garantías. Si necesitas resolver cualquier cuestión técnica adicional, consulta nuestro <Link href="/faq" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">centro completo de preguntas frecuentes</Link>.
+              Información clara sobre <Link href="/dispositivos" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">compatibilidad</Link>, <Link href="/instalacion" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">activación</Link>, <Link href="/planes" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">formas de pago</Link> y garantías. Si necesitas resolver cualquier cuestión técnica adicional, consulta nuestro <Link href="/faq" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">centro completo de preguntas frecuentes</Link>.
             </p>
           </div>
 
@@ -617,7 +617,7 @@ export default function HomePage() {
           <div className="mt-8 text-center">
             <Link
               href="/faq"
-              className="inline-flex items-center gap-2 text-sm font-bold text-spanish-redBright hover:underline"
+              className="inline-flex items-center gap-2 text-sm font-bold text-spanish-redBright underline decoration-spanish-redBright/60 hover:text-white hover:decoration-white"
             >
               <span>Ver todas las preguntas frecuentes de clientes →</span>
             </Link>
@@ -637,7 +637,7 @@ export default function HomePage() {
             Disfruta de la mejor televisión IPTV en España hoy mismo
           </h2>
           <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            Más de 35.000 canales 4K, todo el fútbol en directo y 120.000 títulos en VOD con la garantía y estabilidad de <strong>Reflexsat IPTV</strong>. Descubre nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción</Link> o solicita tu <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
+            Más de 35.000 canales 4K, todo el fútbol en directo y 120.000 títulos en VOD con la garantía y estabilidad de <strong>Reflexsat IPTV</strong>. Descubre nuestros <Link href="/planes" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white hover:decoration-white">planes de suscripción</Link> o solicita tu <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">

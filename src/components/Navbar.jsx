@@ -145,7 +145,7 @@ export default function Navbar() {
                 className="px-4 py-3 text-base font-semibold text-gray-200 hover:text-white hover:bg-white/5 rounded-xl transition-colors flex items-center justify-between"
               >
                 <span>{link.label}</span>
-                <ChevronRight className="w-4 h-4 text-gray-500" />
+                <ChevronRight className="w-4 h-4 text-gray-400" />
               </Link>
             ))}
           </nav>

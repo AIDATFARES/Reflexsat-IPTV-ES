@@ -46,7 +46,7 @@ export default function PricingCard({ plan }) {
             {plan.price} €
           </span>
           {plan.originalPrice && (
-            <span className="text-base text-gray-500 line-through">
+            <span className="text-base text-gray-400 line-through">
               {plan.originalPrice} €
             </span>
           )}

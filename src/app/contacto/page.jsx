@@ -81,7 +81,7 @@ export default function ContactoPage({ searchParams }) {
                 <div>
                   <div className="font-bold text-white">Activación Exprés</div>
                   <div className="text-xs text-gray-400 mt-0.5">
-                    Envío automático de usuario y contraseña con guía en nuestra sección de <Link href="/instalacion" className="text-spanish-gold hover:underline">instalación paso a paso</Link>.
+                    Envío automático de usuario y contraseña con guía en nuestra sección de <Link href="/instalacion" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">instalación paso a paso</Link>.
                   </div>
                 </div>
               </div>

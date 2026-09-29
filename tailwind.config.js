@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         spanish: {
           red: '#AA151B',
-          redBright: '#D61F2C',
+          redBright: '#FF4D5A',
           redDark: '#780C11',
           yellow: '#F1BF00',
           gold: '#FFC400',
@@ -31,7 +31,7 @@ module.exports = {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       boxShadow: {
-        'glow-red': '0 0 25px rgba(214, 31, 44, 0.35)',
+        'glow-red': '0 0 25px rgba(255, 77, 90, 0.35)',
         'glow-gold': '0 0 25px rgba(255, 196, 0, 0.35)',
         'card-dark': '0 10px 30px -10px rgba(0, 0, 0, 0.7)',
         'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
@@ -39,7 +39,7 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'spanish-flag': 'linear-gradient(90deg, #AA151B 0% 30%, #F1BF00 30% 70%, #AA151B 70% 100%)',
-        'red-gold-gradient': 'linear-gradient(135deg, #D61F2C 0%, #F1BF00 100%)',
+        'red-gold-gradient': 'linear-gradient(135deg, #FF4D5A 0%, #F1BF00 100%)',
         'dark-card-gradient': 'linear-gradient(180deg, rgba(26,26,26,0.7) 0%, rgba(13,13,13,0.9) 100%)',
       },
       animation: {

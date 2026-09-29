@@ -83,7 +83,7 @@ export default function PlanesPage() {
         </h1>
         <div className="w-24 h-1 spanish-flag-line mx-auto" />
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-          Sin contratos de permanencia ni cuotas ocultas. Activación exprés en 5 minutos compatible con <Link href="/dispositivos" className="text-spanish-gold font-semibold hover:underline">todos tus dispositivos</Link> mediante nuestras <Link href="/instalacion" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">guías paso a paso</Link>. Respaldado por nuestra <Link href="/politica-de-reembolso" className="text-spanish-gold font-bold hover:underline">garantía de devolución de 7 días</Link> o solicita tu <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
+          Sin contratos de permanencia ni cuotas ocultas. Activación exprés en 5 minutos compatible con <Link href="/dispositivos" className="text-spanish-gold font-semibold underline decoration-spanish-gold/60 hover:text-white">todos tus dispositivos</Link> mediante nuestras <Link href="/instalacion" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">guías paso a paso</Link>. Respaldado por nuestra <Link href="/politica-de-reembolso" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white">garantía de devolución de 7 días</Link> o solicita tu <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
         </p>
       </div>
 
@@ -153,11 +153,11 @@ export default function PlanesPage() {
       <div className="text-center p-8 rounded-2xl bg-dark-950 border border-white/10 max-w-2xl mx-auto">
         <h2 className="text-lg font-bold text-white mb-2">¿Tienes alguna duda sobre qué plan elegir?</h2>
         <p className="text-sm text-gray-400 mb-4">
-          Nuestro equipo de atención al cliente en España te asesora de forma personalizada en minutos o puedes resolver dudas en nuestras <Link href="/faq" className="text-spanish-gold hover:underline">preguntas frecuentes</Link>.
+          Nuestro equipo de atención al cliente en España te asesora de forma personalizada en minutos o puedes resolver dudas en nuestras <Link href="/faq" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">preguntas frecuentes</Link>.
         </p>
         <Link
           href="/contacto"
-          className="inline-flex items-center gap-2 text-sm font-bold text-spanish-gold hover:underline"
+          className="inline-flex items-center gap-2 text-sm font-bold text-spanish-gold underline decoration-spanish-gold/60 hover:text-white"
         >
           <span>Escríbenos a través del formulario de contacto →</span>
         </Link>

@@ -57,7 +57,7 @@ export default function InstalacionIndexPage() {
         </h1>
         <div className="w-24 h-1 spanish-flag-line mx-auto" />
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-          Selecciona tu dispositivo a continuación para acceder al tutorial paso a paso con las mejores aplicaciones de reproducción, ajustes de aceleración y soluciones a dudas frecuentes. Si todavía no dispones de acceso activo, consulta nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción IPTV</Link> o solicita una <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
+          Selecciona tu dispositivo a continuación para acceder al tutorial paso a paso con las mejores aplicaciones de reproducción, ajustes de aceleración y soluciones a dudas frecuentes. Si todavía no dispones de acceso activo, consulta nuestros <Link href="/planes" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white">planes de suscripción IPTV</Link> o solicita una <Link href="/contacto?plan=prueba-gratis" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">prueba gratuita</Link>.
         </p>
       </div>
 

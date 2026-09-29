@@ -34,10 +34,10 @@ export default function PoliticaCookiesPage() {
             <p>En <strong>Reflexsat IPTV</strong> utilizamos únicamente cookies técnicas y funcionales esenciales:</p>
             <ul className="list-disc pl-5 space-y-2 text-gray-400">
               <li>
-                <strong>Cookies técnicas necesarias:</strong> Imprescindibles para la correcta navegación, seguridad y funcionamiento del <Link href="/contacto" className="text-spanish-gold hover:underline">formulario de contacto</Link>.
+                <strong>Cookies técnicas necesarias:</strong> Imprescindibles para la correcta navegación, seguridad y funcionamiento del <Link href="/contacto" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">formulario de contacto</Link>.
               </li>
               <li>
-                <strong>Cookies de preferencias:</strong> Recuerdan configuraciones de interfaz o la preselección de <Link href="/planes" className="text-spanish-gold hover:underline">planes de IPTV</Link>.
+                <strong>Cookies de preferencias:</strong> Recuerdan configuraciones de interfaz o la preselección de <Link href="/planes" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">planes de IPTV</Link>.
               </li>
               <li>
                 <strong>Cookies de rendimiento y análisis:</strong> Permiten medir de forma anónima el rendimiento de la plataforma para mejorar los tiempos de carga en España.

@@ -141,7 +141,7 @@ export default function BlogIndexPage() {
                 )}
 
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-3 text-xs text-gray-500">
+                  <div className="flex items-center justify-between mb-3 text-xs text-gray-400">
                     <span>{article.date}</span>
                     <span>{article.readTime}</span>
                   </div>

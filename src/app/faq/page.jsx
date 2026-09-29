@@ -35,7 +35,7 @@ export default function FaqPage() {
         </h1>
         <div className="w-24 h-1 spanish-flag-line mx-auto" />
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-          Encuentra respuestas inmediatas sobre nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción IPTV</Link>, <Link href="/instalacion" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">guías de instalación</Link>, compatibilidad con <Link href="/dispositivos" className="text-spanish-gold hover:underline">Smart TV y dispositivos</Link> o pagos protegidos con <Link href="/politica-de-reembolso" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">garantía de reembolso</Link>.
+          Encuentra respuestas inmediatas sobre nuestros <Link href="/planes" className="text-spanish-gold font-bold underline decoration-spanish-gold/60 hover:text-white">planes de suscripción IPTV</Link>, <Link href="/instalacion" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">guías de instalación</Link>, compatibilidad con <Link href="/dispositivos" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">Smart TV y dispositivos</Link> o pagos protegidos con <Link href="/politica-de-reembolso" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">garantía de reembolso</Link>.
         </p>
 
         {/* Search Bar */}
@@ -46,7 +46,7 @@ export default function FaqPage() {
               placeholder="Buscar por palabra clave (ej. Smart TV, fútbol, pago, cortes...)"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-11 pr-4 py-3.5 rounded-xl bg-dark-950 border border-white/10 text-white text-sm focus:outline-none focus:border-spanish-red transition-colors placeholder:text-gray-500 shadow-glass"
+              className="w-full pl-11 pr-4 py-3.5 rounded-xl bg-dark-950 border border-white/10 text-white text-sm focus:outline-none focus:border-spanish-red transition-colors placeholder:text-gray-400 shadow-glass"
             />
             <Search className="w-5 h-5 text-gray-400 absolute left-4 top-1/2 -translate-y-1/2" />
           </div>
@@ -91,7 +91,7 @@ export default function FaqPage() {
           <FaqAccordion items={filteredFaqs} includeSchema={true} />
         ) : (
           <div className="text-center py-12 glass-card rounded-2xl border border-white/5 space-y-3">
-            <HelpCircle className="w-12 h-12 text-gray-500 mx-auto" />
+            <HelpCircle className="w-12 h-12 text-gray-400 mx-auto" />
             <p className="text-lg font-bold text-white">No se han encontrado preguntas</p>
             <p className="text-sm text-gray-400">
               Prueba a buscar con otro término o consulta directamente a nuestro equipo de soporte.
@@ -102,7 +102,7 @@ export default function FaqPage() {
                 setSelectedCategory('all');
                 setSearchQuery('');
               }}
-              className="text-xs font-bold text-spanish-gold hover:underline pt-2"
+              className="text-xs font-bold text-spanish-gold underline decoration-spanish-gold/60 hover:text-white pt-2"
             >
               Restablecer filtros
             </button>
@@ -114,7 +114,7 @@ export default function FaqPage() {
       <div className="glass-card rounded-2xl p-8 border border-white/10 text-center space-y-4 max-w-2xl mx-auto bg-gradient-to-b from-dark-900 to-dark-950">
         <h2 className="text-2xl font-bold text-white">¿No has encontrado la respuesta que buscabas?</h2>
         <p className="text-sm text-gray-300 leading-relaxed">
-          Nuestro equipo técnico está a tu entera disposición a través de <Link href="/contacto" className="text-spanish-gold font-semibold hover:underline">nuestro formulario de contacto</Link> o WhatsApp directo para resolver cualquier duda antes de contratar tu <Link href="/planes" className="text-spanish-gold underline hover:text-white">suscripción IPTV</Link>.
+          Nuestro equipo técnico está a tu entera disposición a través de <Link href="/contacto" className="text-spanish-gold font-semibold underline decoration-spanish-gold/60 hover:text-white">nuestro formulario de contacto</Link> o WhatsApp directo para resolver cualquier duda antes de contratar tu <Link href="/planes" className="text-spanish-gold underline hover:text-white">suscripción IPTV</Link>.
         </p>
         <div className="pt-2">
           <Link

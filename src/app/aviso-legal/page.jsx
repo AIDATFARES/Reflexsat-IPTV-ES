@@ -25,28 +25,28 @@ export default function AvisoLegalPage() {
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">1. Datos Identificativos</h2>
             <p>
-              En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que el presente portal web opera bajo la denominación comercial <strong>Reflexsat IPTV</strong> con dominio principal <Link href="/" className="text-spanish-gold hover:underline">www.reflexsat.es</Link>. Para cualquier comunicación, puede dirigirse a nuestro departamento de <Link href="/contacto" className="text-spanish-gold hover:underline">Contacto y Atención al Cliente</Link>.
+              En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que el presente portal web opera bajo la denominación comercial <strong>Reflexsat IPTV</strong> con dominio principal <Link href="/" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">www.reflexsat.es</Link>. Para cualquier comunicación, puede dirigirse a nuestro departamento de <Link href="/contacto" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">Contacto y Atención al Cliente</Link>.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">2. Propiedad Intelectual e Industrial</h2>
             <p>
-              El diseño, código fuente, logotipos, elementos gráficos y contenidos propios del sitio web son titularidad de Reflexsat IPTV o de sus legítimos licenciantes, estando protegidos por la legislación española e internacional sobre propiedad intelectual e industrial. El uso de los servicios se rige por nuestros <Link href="/terminos-y-condiciones" className="text-spanish-gold hover:underline">Términos y Condiciones de Uso</Link>.
+              El diseño, código fuente, logotipos, elementos gráficos y contenidos propios del sitio web son titularidad de Reflexsat IPTV o de sus legítimos licenciantes, estando protegidos por la legislación española e internacional sobre propiedad intelectual e industrial. El uso de los servicios se rige por nuestros <Link href="/terminos-y-condiciones" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">Términos y Condiciones de Uso</Link>.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">3. Exención de Responsabilidad y Enlaces</h2>
             <p>
-              Reflexsat IPTV no se responsabiliza del uso indebido que los usuarios puedan realizar de los contenidos o servicios facilitados, ni de las posibles interrupciones temporales ocasionadas por fallos en los proveedores de acceso a Internet ajenos a la plataforma. Para conocer el tratamiento de sus datos o su derecho de desistimiento, consulte nuestra <Link href="/politica-de-privacidad" className="text-spanish-gold hover:underline">Política de Privacidad</Link> y la <Link href="/politica-de-reembolso" className="text-spanish-gold hover:underline">Garantía de Reembolso</Link>.
+              Reflexsat IPTV no se responsabiliza del uso indebido que los usuarios puedan realizar de los contenidos o servicios facilitados, ni de las posibles interrupciones temporales ocasionadas por fallos en los proveedores de acceso a Internet ajenos a la plataforma. Para conocer el tratamiento de sus datos o su derecho de desistimiento, consulte nuestra <Link href="/politica-de-privacidad" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">Política de Privacidad</Link> y la <Link href="/politica-de-reembolso" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">Garantía de Reembolso</Link>.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">4. Legislación Aplicable y Jurisdicción</h2>
             <p>
-              Para la resolución de cualquier controversia relativa a este sitio web o a la contratación de nuestros <Link href="/planes" className="text-spanish-gold hover:underline">planes de suscripción</Link>, será de aplicación la legislación española, sometiéndose las partes a los juzgados y tribunales competentes conforme a la normativa de consumidores y usuarios.
+              Para la resolución de cualquier controversia relativa a este sitio web o a la contratación de nuestros <Link href="/planes" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">planes de suscripción</Link>, será de aplicación la legislación española, sometiéndose las partes a los juzgados y tribunales competentes conforme a la normativa de consumidores y usuarios.
             </p>
           </section>
         </div>

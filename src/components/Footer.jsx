@@ -17,7 +17,7 @@ export default function Footer() {
               </div>
               <div className="text-left">
                 <div className="text-white font-bold text-sm">Activación Inmediata</div>
-                <div className="text-xs text-gray-500">Credenciales en ±5 min</div>
+                <div className="text-xs text-gray-400">Credenciales en ±5 min</div>
               </div>
             </div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
               </div>
               <div className="text-left">
                 <div className="text-white font-bold text-sm">Garantía 7 Días</div>
-                <div className="text-xs text-gray-500">Devolución sin preguntas</div>
+                <div className="text-xs text-gray-400">Devolución sin preguntas</div>
               </div>
             </div>
 
@@ -37,7 +37,7 @@ export default function Footer() {
               </div>
               <div className="text-left">
                 <div className="text-white font-bold text-sm">Soporte 24/7 en Español</div>
-                <div className="text-xs text-gray-500">Atención técnica VIP</div>
+                <div className="text-xs text-gray-400">Atención técnica VIP</div>
               </div>
             </div>
 
@@ -47,7 +47,7 @@ export default function Footer() {
               </div>
               <div className="text-left">
                 <div className="text-white font-bold text-sm">Pago 100% Seguro</div>
-                <div className="text-xs text-gray-500">Cifrado SSL 256-bit</div>
+                <div className="text-xs text-gray-400">Cifrado SSL 256-bit</div>
               </div>
             </div>
           </div>
@@ -179,15 +179,15 @@ export default function Footer() {
             <p className="text-white font-bold text-base mb-4 tracking-wide">Atención al Cliente</p>
             <ul className="space-y-3">
               <li>
-                <div className="text-xs text-gray-500">Horario de soporte:</div>
+                <div className="text-xs text-gray-400">Horario de soporte:</div>
                 <div className="text-white font-medium">Lunes a Domingo — 24 horas</div>
               </li>
               <li>
-                <div className="text-xs text-gray-500">Tiempo estimado de respuesta:</div>
+                <div className="text-xs text-gray-400">Tiempo estimado de respuesta:</div>
                 <div className="text-spanish-gold font-medium">Menos de 10 minutos</div>
               </li>
               <li>
-                <div className="text-xs text-gray-500">Canal de WhatsApp 24/7:</div>
+                <div className="text-xs text-gray-400">Canal de WhatsApp 24/7:</div>
                 <a
                   href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20m%C3%A1s%20informaci%C3%B3n"
                   target="_blank"
@@ -199,10 +199,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <div className="text-xs text-gray-500">Consulta comercial o técnica:</div>
+                <div className="text-xs text-gray-400">Consulta comercial o técnica:</div>
                 <Link
                   href="/contacto"
-                  className="inline-flex items-center text-spanish-redBright hover:underline font-semibold mt-1"
+                  className="inline-flex items-center text-spanish-redBright underline decoration-spanish-redBright/60 hover:text-white font-semibold mt-1"
                 >
                   Abrir formulario de contacto →
                 </Link>
@@ -214,10 +214,10 @@ export default function Footer() {
         {/* Payment Methods Notice */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3 text-xs text-gray-400">
-            <CreditCard className="w-5 h-5 text-gray-500" />
+            <CreditCard className="w-5 h-5 text-gray-400" />
             <span>Pagos seguros admitidos: Tarjetas Visa, Mastercard, Transferencia y pasarelas protegidas SSL.</span>
           </div>
-          <div className="text-xs text-gray-500 text-center md:text-right">
+          <div className="text-xs text-gray-400 text-center md:text-right">
             <span>Reflexsat IPTV opera con servidores de alta redundancia en España y la Unión Europea.</span>
           </div>
         </div>
@@ -225,26 +225,26 @@ export default function Footer() {
 
       {/* Bottom Copyright & Legal Links */}
       <div className="bg-dark-900 border-t border-white/5 py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400">
           <p>© {currentYear} Reflexsat IPTV (www.reflexsat.es) — Todos los derechos reservados.</p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link href="/politica-de-privacidad" className="hover:text-gray-300 transition-colors">
+            <Link href="/politica-de-privacidad" className="hover:text-white transition-colors">
               Política de Privacidad
             </Link>
             <span>•</span>
-            <Link href="/terminos-y-condiciones" className="hover:text-gray-300 transition-colors">
+            <Link href="/terminos-y-condiciones" className="hover:text-white transition-colors">
               Términos y Condiciones
             </Link>
             <span>•</span>
-            <Link href="/politica-de-reembolso" className="hover:text-gray-300 transition-colors">
+            <Link href="/politica-de-reembolso" className="hover:text-white transition-colors">
               Política de Reembolso
             </Link>
             <span>•</span>
-            <Link href="/politica-de-cookies" className="hover:text-gray-300 transition-colors">
+            <Link href="/politica-de-cookies" className="hover:text-white transition-colors">
               Política de Cookies
             </Link>
             <span>•</span>
-            <Link href="/aviso-legal" className="hover:text-gray-300 transition-colors">
+            <Link href="/aviso-legal" className="hover:text-white transition-colors">
               Aviso Legal
             </Link>
           </div>

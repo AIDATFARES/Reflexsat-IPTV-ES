@@ -34,10 +34,10 @@ export default function PoliticaReembolsoPage() {
             <p>Podrás solicitar el reembolso completo en cualquiera de los siguientes casos:</p>
             <ul className="list-disc pl-5 space-y-2 text-gray-400">
               <li>
-                Incompatibilidad técnica de tu <Link href="/dispositivos" className="text-spanish-gold hover:underline">aparato o televisor</Link> tras haber recibido soporte o consultado las <Link href="/instalacion" className="text-spanish-gold hover:underline">guías de instalación oficiales</Link>.
+                Incompatibilidad técnica de tu <Link href="/dispositivos" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">aparato o televisor</Link> tras haber recibido soporte o consultado las <Link href="/instalacion" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">guías de instalación oficiales</Link>.
               </li>
               <li>
-                Problemas persistentes de cortes o señal que no puedan solucionarse aplicando nuestros consejos de optimización y <Link href="/blog/como-solucionar-buffering-cortes-iptv" className="text-spanish-gold hover:underline">solución al buffering</Link>.
+                Problemas persistentes de cortes o señal que no puedan solucionarse aplicando nuestros consejos de optimización y <Link href="/blog/como-solucionar-buffering-cortes-iptv" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">solución al buffering</Link>.
               </li>
               <li>Retraso superior a 24 horas en la activación inicial tras la confirmación de pago.</li>
               <li>Insatisfacción general con la calidad del servicio dentro del plazo garantizado de 7 días naturales.</li>

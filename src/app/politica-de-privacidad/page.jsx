@@ -25,34 +25,34 @@ export default function PoliticaPrivacidadPage() {
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">1. Responsable del Tratamiento</h2>
             <p>
-              En cumplimiento del Reglamento General de Protección de Datos (RGPD) de la Unión Europea (UE) 2016/679 y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), le informamos que los datos recabados en este sitio web pertenecen a <strong>Reflexsat IPTV</strong> (<Link href="/" className="text-spanish-gold hover:underline">www.reflexsat.es</Link>).
+              En cumplimiento del Reglamento General de Protección de Datos (RGPD) de la Unión Europea (UE) 2016/679 y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), le informamos que los datos recabados en este sitio web pertenecen a <strong>Reflexsat IPTV</strong> (<Link href="/" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">www.reflexsat.es</Link>).
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">2. Datos Recopilados y Finalidad</h2>
             <p>
-              Recopilamos únicamente la información indispensable para el suministro del servicio solicitado, la gestión de la activación de su suscripción en nuestros <Link href="/planes" className="text-spanish-gold hover:underline">planes de IPTV</Link> y la atención al cliente:
+              Recopilamos únicamente la información indispensable para el suministro del servicio solicitado, la gestión de la activación de su suscripción en nuestros <Link href="/planes" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">planes de IPTV</Link> y la atención al cliente:
             </p>
             <ul className="list-disc pl-5 space-y-2 text-gray-400">
               <li>Nombre o alias para la personalización de las comunicaciones.</li>
-              <li>Dirección de correo electrónico para la entrega de credenciales y <Link href="/instalacion" className="text-spanish-gold hover:underline">guías de configuración técnica</Link>.</li>
+              <li>Dirección de correo electrónico para la entrega de credenciales y <Link href="/instalacion" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">guías de configuración técnica</Link>.</li>
               <li>Número de teléfono / WhatsApp para soporte técnico si el usuario lo solicita expresamente.</li>
-              <li>Detalles técnicos del <Link href="/dispositivos" className="text-spanish-gold hover:underline">dispositivo compatible</Link> (modelo o dirección MAC en decodificadores MAG) para la correcta vinculación del flujo de señal.</li>
+              <li>Detalles técnicos del <Link href="/dispositivos" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">dispositivo compatible</Link> (modelo o dirección MAC en decodificadores MAG) para la correcta vinculación del flujo de señal.</li>
             </ul>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">3. Conservación de los Datos</h2>
             <p>
-              Los datos se mantendrán durante el tiempo estrictamente necesario para la vigencia de la suscripción contratada y mientras existan obligaciones legales aplicables, tras lo cual se procederá a su supresión o bloqueo seguro conforme a nuestra <Link href="/terminos-y-condiciones" className="text-spanish-gold hover:underline">política de términos y condiciones</Link>.
+              Los datos se mantendrán durante el tiempo estrictamente necesario para la vigencia de la suscripción contratada y mientras existan obligaciones legales aplicables, tras lo cual se procederá a su supresión o bloqueo seguro conforme a nuestra <Link href="/terminos-y-condiciones" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">política de términos y condiciones</Link>.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">4. Derechos del Usuario (ARCO)</h2>
             <p>
-              Cualquier usuario puede ejercer sus derechos de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición dirigiéndose a nuestro equipo mediante el formulario habilitado en la sección de <Link href="/contacto" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">Contacto y Soporte</Link> o consultando nuestras <Link href="/faq" className="text-spanish-gold hover:underline">preguntas frecuentes</Link>.
+              Cualquier usuario puede ejercer sus derechos de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición dirigiéndose a nuestro equipo mediante el formulario habilitado en la sección de <Link href="/contacto" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">Contacto y Soporte</Link> o consultando nuestras <Link href="/faq" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">preguntas frecuentes</Link>.
             </p>
           </section>
 

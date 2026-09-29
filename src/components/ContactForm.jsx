@@ -184,7 +184,7 @@ export default function ContactForm({ defaultPlan = '' }) {
       <div className="flex items-center gap-2 text-xs text-gray-400">
         <input type="checkbox" required id="consent" className="rounded bg-dark-900 border-white/20 text-spanish-red" />
         <label htmlFor="consent">
-          He leído y acepto la <Link href="/politica-de-privacidad" className="text-spanish-gold hover:underline">Política de Privacidad</Link>, los <Link href="/terminos-y-condiciones" className="text-spanish-gold hover:underline">Términos y Condiciones</Link> y la <Link href="/politica-de-reembolso" className="text-spanish-gold hover:underline">Garantía de Devolución</Link>.
+          He leído y acepto la <Link href="/politica-de-privacidad" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">Política de Privacidad</Link>, los <Link href="/terminos-y-condiciones" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">Términos y Condiciones</Link> y la <Link href="/politica-de-reembolso" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">Garantía de Devolución</Link>.
         </label>
       </div>
 

@@ -25,14 +25,14 @@ export default function TerminosCondicionesPage() {
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">1. Aceptación de los Términos</h2>
             <p>
-              El acceso, navegación y uso del portal web <strong>www.reflexsat.es</strong>, así como la contratación de cualquiera de los <Link href="/planes" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">planes de suscripción de Reflexsat IPTV</Link>, implica la aceptación expresa y sin reservas de todos los términos contenidos en el presente documento, así como de nuestra <Link href="/politica-de-privacidad" className="text-spanish-gold hover:underline">Política de Privacidad</Link>.
+              El acceso, navegación y uso del portal web <strong>www.reflexsat.es</strong>, así como la contratación de cualquiera de los <Link href="/planes" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">planes de suscripción de Reflexsat IPTV</Link>, implica la aceptación expresa y sin reservas de todos los términos contenidos en el presente documento, así como de nuestra <Link href="/politica-de-privacidad" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">Política de Privacidad</Link>.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">2. Naturaleza del Servicio</h2>
             <p>
-              Reflexsat IPTV proporciona servicios de transmisión de flujos multimedia vía protocolo IP. El usuario debe disponer de una conexión a Internet de banda ancha adecuada y un <Link href="/dispositivos" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">dispositivo compatible</Link> (Smart TV, receptor Android TV, Amazon Fire TV Stick, Apple TV, PC o móvil). Para facilitar la configuración técnica, ponemos a disposición nuestras <Link href="/instalacion" className="text-spanish-gold hover:underline">guías de instalación detalladas</Link>.
+              Reflexsat IPTV proporciona servicios de transmisión de flujos multimedia vía protocolo IP. El usuario debe disponer de una conexión a Internet de banda ancha adecuada y un <Link href="/dispositivos" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">dispositivo compatible</Link> (Smart TV, receptor Android TV, Amazon Fire TV Stick, Apple TV, PC o móvil). Para facilitar la configuración técnica, ponemos a disposición nuestras <Link href="/instalacion" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">guías de instalación detalladas</Link>.
             </p>
           </section>
 
@@ -53,7 +53,7 @@ export default function TerminosCondicionesPage() {
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">5. Disponibilidad y Soporte Técnico</h2>
             <p>
-              Nuestra infraestructura cuenta con servidores con CDN y redundancia para ofrecer un 99.9% de operatividad. Ante cualquier incidencia técnica o duda sobre la activación, nuestro equipo atiende ininterrumpidamente a través del canal de <Link href="/contacto" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">Contacto y Soporte 24/7</Link> o en nuestra sección de <Link href="/faq" className="text-spanish-gold hover:underline">Preguntas Frecuentes</Link>.
+              Nuestra infraestructura cuenta con servidores con CDN y redundancia para ofrecer un 99.9% de operatividad. Ante cualquier incidencia técnica o duda sobre la activación, nuestro equipo atiende ininterrumpidamente a través del canal de <Link href="/contacto" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">Contacto y Soporte 24/7</Link> o en nuestra sección de <Link href="/faq" className="text-spanish-gold underline decoration-spanish-gold/60 hover:text-white">Preguntas Frecuentes</Link>.
             </p>
           </section>
         </div>
