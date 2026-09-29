@@ -87,7 +87,7 @@ export default function Footer() {
 
           {/* Quick Navigation */}
           <div>
-            <h3 className="text-white font-bold text-base mb-4 tracking-wide">Navegación</h3>
+            <p className="text-white font-bold text-base mb-4 tracking-wide">Navegación</p>
             <ul className="space-y-2.5">
               <li>
                 <Link href="/" className="hover:text-white transition-colors">
@@ -129,7 +129,7 @@ export default function Footer() {
 
           {/* Device Guides */}
           <div>
-            <h3 className="text-white font-bold text-base mb-4 tracking-wide">Guías por Dispositivo</h3>
+            <p className="text-white font-bold text-base mb-4 tracking-wide">Guías por Dispositivo</p>
             <ul className="space-y-2.5">
               <li>
                 <Link href="/instalacion/samsung-smart-tv" className="hover:text-white transition-colors">
@@ -176,7 +176,7 @@ export default function Footer() {
 
           {/* Contact & Support */}
           <div>
-            <h3 className="text-white font-bold text-base mb-4 tracking-wide">Atención al Cliente</h3>
+            <p className="text-white font-bold text-base mb-4 tracking-wide">Atención al Cliente</p>
             <ul className="space-y-3">
               <li>
                 <div className="text-xs text-gray-500">Horario de soporte:</div>

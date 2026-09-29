@@ -10,15 +10,15 @@ export default function ContactForm({ defaultPlan = '' }) {
     if (p === '3-meses') return 'Plan 1 Dispositivo — 3 Meses (30 €)';
     if (p === '6-meses') return 'Plan 1 Dispositivo — 6 Meses (45 €)';
     if (p === '12-meses') return 'Plan 1 Dispositivo — 12 Meses (60 €)';
-    if (p === '2-disp-3m') return 'Plan 2 Dispositivos — 3 Meses (45 €)';
-    if (p === '2-disp-6m') return 'Plan 2 Dispositivos — 6 Meses (60 €)';
-    if (p === 'familiar-2') return 'Plan 2 Dispositivos — 12 Meses (79 €)';
-    if (p === '3-disp-3m') return 'Plan 3 Dispositivos — 3 Meses (60 €)';
-    if (p === '3-disp-6m') return 'Plan 3 Dispositivos — 6 Meses (85 €)';
-    if (p === 'familiar-3') return 'Plan 3 Dispositivos — 12 Meses (109 €)';
-    if (p === '4-disp-3m') return 'Plan 4 Dispositivos — 3 Meses (75 €)';
-    if (p === '4-disp-6m') return 'Plan 4 Dispositivos — 6 Meses (105 €)';
-    if (p === 'familiar-4') return 'Plan 4 Dispositivos — 12 Meses (139 €)';
+    if (p === '2-disp-3m') return 'Plan 2 Dispositivos — 3 Meses (60 €)';
+    if (p === '2-disp-6m') return 'Plan 2 Dispositivos — 6 Meses (90 €)';
+    if (p === 'familiar-2') return 'Plan 2 Dispositivos — 12 Meses (120 €)';
+    if (p === '3-disp-3m') return 'Plan 3 Dispositivos — 3 Meses (90 €)';
+    if (p === '3-disp-6m') return 'Plan 3 Dispositivos — 6 Meses (135 €)';
+    if (p === 'familiar-3') return 'Plan 3 Dispositivos — 12 Meses (180 €)';
+    if (p === '4-disp-3m') return 'Plan 4 Dispositivos — 3 Meses (120 €)';
+    if (p === '4-disp-6m') return 'Plan 4 Dispositivos — 6 Meses (180 €)';
+    if (p === 'familiar-4') return 'Plan 4 Dispositivos — 12 Meses (240 €)';
     return p || 'Plan 1 Dispositivo — 12 Meses (60 €)';
   };
 
@@ -150,19 +150,19 @@ export default function ContactForm({ defaultPlan = '' }) {
             <option value="Plan 1 Dispositivo — 12 Meses (60 €)">1 Dispositivo — 12 Meses (60,00 €)</option>
           </optgroup>
           <optgroup label="2 Dispositivos (Pack Dúo)">
-            <option value="Plan 2 Dispositivos — 3 Meses (45 €)">2 Dispositivos — 3 Meses (45,00 €)</option>
-            <option value="Plan 2 Dispositivos — 6 Meses (60 €)">2 Dispositivos — 6 Meses (60,00 €)</option>
-            <option value="Plan 2 Dispositivos — 12 Meses (79 €)">2 Dispositivos — 12 Meses (79,00 €)</option>
+            <option value="Plan 2 Dispositivos — 3 Meses (60 €)">2 Dispositivos — 3 Meses (60,00 €)</option>
+            <option value="Plan 2 Dispositivos — 6 Meses (90 €)">2 Dispositivos — 6 Meses (90,00 €)</option>
+            <option value="Plan 2 Dispositivos — 12 Meses (120 €)">2 Dispositivos — 12 Meses (120,00 €)</option>
           </optgroup>
           <optgroup label="3 Dispositivos (Pack Familiar)">
-            <option value="Plan 3 Dispositivos — 3 Meses (60 €)">3 Dispositivos — 3 Meses (60,00 €)</option>
-            <option value="Plan 3 Dispositivos — 6 Meses (85 €)">3 Dispositivos — 6 Meses (85,00 €)</option>
-            <option value="Plan 3 Dispositivos — 12 Meses (109 €)">3 Dispositivos — 12 Meses (109,00 €)</option>
+            <option value="Plan 3 Dispositivos — 3 Meses (90 €)">3 Dispositivos — 3 Meses (90,00 €)</option>
+            <option value="Plan 3 Dispositivos — 6 Meses (135 €)">3 Dispositivos — 6 Meses (135,00 €)</option>
+            <option value="Plan 3 Dispositivos — 12 Meses (180 €)">3 Dispositivos — 12 Meses (180,00 €)</option>
           </optgroup>
-          <optgroup label="4 Dispositivos (Máximo Ahorro)">
-            <option value="Plan 4 Dispositivos — 3 Meses (75 €)">4 Dispositivos — 3 Meses (75,00 €)</option>
-            <option value="Plan 4 Dispositivos — 6 Meses (105 €)">4 Dispositivos — 6 Meses (105,00 €)</option>
-            <option value="Plan 4 Dispositivos — 12 Meses (139 €)">4 Dispositivos — 12 Meses (139,00 €)</option>
+          <optgroup label="4 Dispositivos (Pack 4 Pantallas)">
+            <option value="Plan 4 Dispositivos — 3 Meses (120 €)">4 Dispositivos — 3 Meses (120,00 €)</option>
+            <option value="Plan 4 Dispositivos — 6 Meses (180 €)">4 Dispositivos — 6 Meses (180,00 €)</option>
+            <option value="Plan 4 Dispositivos — 12 Meses (240 €)">4 Dispositivos — 12 Meses (240,00 €)</option>
           </optgroup>
           <option value="Consulta técnica / Duda">Consulta técnica / Duda previa</option>
         </select>

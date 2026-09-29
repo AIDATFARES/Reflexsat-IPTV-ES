@@ -84,12 +84,15 @@ export default function FaqPage() {
 
       {/* FAQs List */}
       <div className="mb-20">
+        <h2 className="text-2xl font-bold text-white tracking-tight mb-8">
+          Respuestas a las Preguntas Frecuentes sobre IPTV
+        </h2>
         {filteredFaqs.length > 0 ? (
           <FaqAccordion items={filteredFaqs} includeSchema={true} />
         ) : (
           <div className="text-center py-12 glass-card rounded-2xl border border-white/5 space-y-3">
             <HelpCircle className="w-12 h-12 text-gray-500 mx-auto" />
-            <h2 className="text-lg font-bold text-white">No se han encontrado preguntas</h2>
+            <p className="text-lg font-bold text-white">No se han encontrado preguntas</p>
             <p className="text-sm text-gray-400">
               Prueba a buscar con otro término o consulta directamente a nuestro equipo de soporte.
             </p>

@@ -154,7 +154,7 @@ export default function InstalacionIndexPage() {
 
       {/* Need Help Banner */}
       <div className="text-center p-8 rounded-2xl bg-gradient-to-r from-dark-900 via-dark-800 to-dark-900 border border-white/10 max-w-3xl mx-auto space-y-4">
-        <h3 className="text-2xl font-bold text-white">¿Prefieres que te ayudemos paso a paso?</h3>
+        <h2 className="text-2xl font-bold text-white">¿Prefieres que te ayudemos paso a paso?</h2>
         <p className="text-sm text-gray-300 max-w-xl mx-auto">
           Nuestro equipo de asistencia técnica está disponible las 24 horas del día por WhatsApp para guiarte en directo hasta que tengas todos los canales funcionando en tu televisor.
         </p>

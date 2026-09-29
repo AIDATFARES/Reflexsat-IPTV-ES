@@ -89,6 +89,11 @@ export default function PlanesPage() {
 
       {/* Plans Section with Device Tabs */}
       <div className="mb-20">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Elige tu Plan de Suscripción IPTV
+          </h2>
+        </div>
         <PricingPlansSection defaultDevices={1} />
       </div>
 
@@ -99,10 +104,10 @@ export default function PlanesPage() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
           <div className="space-y-3">
-            <div className="font-bold text-white flex items-center gap-2">
+            <h3 className="font-bold text-white flex items-center gap-2">
               <Zap className="w-5 h-5 text-spanish-gold" />
               <span>Calidad y Servidores</span>
-            </div>
+            </h3>
             <ul className="space-y-2 text-gray-400">
               <li>• Calidad adaptable SD, HD, Full HD y 4K UHD.</li>
               <li>• Redundancia europea anti-congelación 99.9%.</li>
@@ -111,10 +116,10 @@ export default function PlanesPage() {
           </div>
 
           <div className="space-y-3">
-            <div className="font-bold text-white flex items-center gap-2">
+            <h3 className="font-bold text-white flex items-center gap-2">
               <Tv className="w-5 h-5 text-spanish-redBright" />
               <span>Contenidos y Guía</span>
-            </div>
+            </h3>
             <ul className="space-y-2 text-gray-400">
               <li>• Más de 35.000 canales en directo ordenados.</li>
               <li>• Catálogo VOD de +120.000 películas y series.</li>
@@ -123,10 +128,10 @@ export default function PlanesPage() {
           </div>
 
           <div className="space-y-3">
-            <div className="font-bold text-white flex items-center gap-2">
+            <h3 className="font-bold text-white flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-green-400" />
               <span>Garantía y Asistencia</span>
-            </div>
+            </h3>
             <ul className="space-y-2 text-gray-400">
               <li>• 7 días de <Link href="/politica-de-reembolso" className="text-gray-300 hover:text-spanish-gold underline">garantía total de satisfacción o reembolso</Link>.</li>
               <li>• Soporte técnico prioritario 24/7 en español a través de <Link href="/contacto" className="text-gray-300 hover:text-spanish-gold underline">contacto directo</Link>.</li>
@@ -146,7 +151,7 @@ export default function PlanesPage() {
 
       {/* Direct Contact Banner */}
       <div className="text-center p-8 rounded-2xl bg-dark-950 border border-white/10 max-w-2xl mx-auto">
-        <h3 className="text-lg font-bold text-white mb-2">¿Tienes alguna duda sobre qué plan elegir?</h3>
+        <h2 className="text-lg font-bold text-white mb-2">¿Tienes alguna duda sobre qué plan elegir?</h2>
         <p className="text-sm text-gray-400 mb-4">
           Nuestro equipo de atención al cliente en España te asesora de forma personalizada en minutos o puedes resolver dudas en nuestras <Link href="/faq" className="text-spanish-gold hover:underline">preguntas frecuentes</Link>.
         </p>

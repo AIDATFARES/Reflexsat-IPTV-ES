@@ -116,7 +116,7 @@ export default function ContactoPage({ searchParams }) {
 
           {/* Quick Help Navigation Box */}
           <div className="glass-card rounded-2xl p-6 border border-white/10 space-y-4 bg-dark-900/60">
-            <h3 className="text-base font-bold text-white">¿Buscas una solución rápida?</h3>
+            <h2 className="text-base font-bold text-white">¿Buscas una solución rápida?</h2>
             <div className="space-y-2.5 text-xs">
               <Link
                 href="/faq"
@@ -145,6 +145,9 @@ export default function ContactoPage({ searchParams }) {
 
         {/* Right Column: Interactive Form */}
         <div className="lg:col-span-7">
+          <h2 className="text-xl font-bold text-white tracking-tight mb-6">
+            Formulario de Contacto y Solicitudes IPTV
+          </h2>
           <ContactForm defaultPlan={planParam} />
         </div>
       </div>

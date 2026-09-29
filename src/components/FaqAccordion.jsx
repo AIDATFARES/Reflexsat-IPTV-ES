@@ -44,23 +44,25 @@ export default function FaqAccordion({ items, includeSchema = true }) {
                 : 'glass-card border-white/5 hover:border-white/10'
             }`}
           >
-            <button
-              type="button"
-              onClick={() => toggleItem(idx)}
-              className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 focus:outline-none"
-              aria-expanded={isOpen}
-            >
-              <span className="font-bold text-base text-white tracking-tight leading-snug">
-                {item.question}
-              </span>
-              <span
-                className={`p-1.5 rounded-lg bg-white/5 text-spanish-gold transition-transform duration-200 flex-shrink-0 ${
-                  isOpen ? 'rotate-180 bg-spanish-red/20 text-spanish-redBright' : ''
-                }`}
+            <h3 className="m-0 p-0 text-base font-bold text-white tracking-tight leading-snug">
+              <button
+                type="button"
+                onClick={() => toggleItem(idx)}
+                className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 focus:outline-none"
+                aria-expanded={isOpen}
               >
-                <ChevronDown className="w-5 h-5" />
-              </span>
-            </button>
+                <span>
+                  {item.question}
+                </span>
+                <span
+                  className={`p-1.5 rounded-lg bg-white/5 text-spanish-gold transition-transform duration-200 flex-shrink-0 ${
+                    isOpen ? 'rotate-180 bg-spanish-red/20 text-spanish-redBright' : ''
+                  }`}
+                >
+                  <ChevronDown className="w-5 h-5" />
+                </span>
+              </button>
+            </h3>
 
             {isOpen && (
               <div

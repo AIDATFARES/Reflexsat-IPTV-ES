@@ -62,67 +62,74 @@ export default function DispositivosPage() {
       </div>
 
       {/* Devices Detailed Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-        {devicesList.map((device) => (
-          <div
-            key={device.slug}
-            className="glass-card rounded-2xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between hover:border-spanish-red/40 transition-all duration-300 group"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
-                  {getIcon(device.iconName)}
+      <div className="mb-20">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Televisores y Dispositivos Soportados para Streaming IPTV
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {devicesList.map((device) => (
+            <div
+              key={device.slug}
+              className="glass-card rounded-2xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between hover:border-spanish-red/40 transition-all duration-300 group"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
+                    {getIcon(device.iconName)}
+                  </div>
+                  <span className="text-xs font-bold text-gray-400 bg-white/5 px-2.5 py-1 rounded-lg">
+                    {device.category}
+                  </span>
                 </div>
-                <span className="text-xs font-bold text-gray-400 bg-white/5 px-2.5 py-1 rounded-lg">
-                  {device.category}
-                </span>
-              </div>
 
-              <h2 className="text-xl font-bold text-white mb-2 group-hover:text-spanish-gold transition-colors tracking-tight">
-                {device.name}
-              </h2>
-              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed mb-6">
-                {device.shortDesc}
-              </p>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-spanish-gold transition-colors tracking-tight">
+                  {device.name}
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed mb-6">
+                  {device.shortDesc}
+                </p>
 
-              <div className="space-y-4 border-t border-white/5 pt-4 text-xs text-gray-300">
-                <div>
-                  <span className="font-bold text-white block mb-1.5">Apps recomendadas:</span>
-                  <div className="flex flex-wrap gap-1.5">
-                    {device.recommendedApps.slice(0, 3).map((app, idx) => (
-                      <span key={idx} className="bg-white/5 px-2 py-0.5 rounded text-[11px] text-gray-300">
-                        {app}
-                      </span>
-                    ))}
+                <div className="space-y-4 border-t border-white/5 pt-4 text-xs text-gray-300">
+                  <div>
+                    <span className="font-bold text-white block mb-1.5">Apps recomendadas:</span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {device.recommendedApps.slice(0, 3).map((app, idx) => (
+                        <span key={idx} className="bg-white/5 px-2 py-0.5 rounded text-[11px] text-gray-300">
+                          {app}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between text-gray-400 pt-1">
+                    <span>Tiempo de configuración:</span>
+                    <span className="font-semibold text-white">{device.estimatedTime}</span>
                   </div>
                 </div>
+              </div>
 
-                <div className="flex items-center justify-between text-gray-400 pt-1">
-                  <span>Tiempo de configuración:</span>
-                  <span className="font-semibold text-white">{device.estimatedTime}</span>
-                </div>
+              <div className="pt-6 mt-6 border-t border-white/5">
+                <Link
+                  href={`/instalacion/${device.slug}`}
+                  className="w-full py-2.5 px-4 rounded-xl bg-white/10 hover:bg-spanish-red hover:text-white text-gray-200 text-xs font-bold transition-all flex items-center justify-center gap-1.5"
+                >
+                  <span>Ver guía de instalación</span>
+                  <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
-
-            <div className="pt-6 mt-6 border-t border-white/5">
-              <Link
-                href={`/instalacion/${device.slug}`}
-                className="w-full py-2.5 px-4 rounded-xl bg-white/10 hover:bg-spanish-red hover:text-white text-gray-200 text-xs font-bold transition-all flex items-center justify-center gap-1.5"
-              >
-                <span>Ver guía de instalación</span>
-                <ChevronRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       {/* Network Recommendation */}
       <div className="glass-card rounded-2xl p-8 border border-white/10 max-w-4xl mx-auto mb-16 space-y-4 bg-dark-900/60">
-        <h3 className="text-xl font-bold text-white flex items-center gap-2">
+        <h2 className="text-xl font-bold text-white flex items-center gap-2">
           <Zap className="w-5 h-5 text-spanish-gold" />
           <span>Recomendaciones de Conexión a Internet en España</span>
-        </h3>
+        </h2>
         <p className="text-sm text-gray-300 leading-relaxed">
           Para exprimir al máximo la resolución 4K y 60 FPS en eventos en directo con nuestros <Link href="/planes" className="text-spanish-gold font-bold hover:underline">planes de suscripción</Link>, te sugerimos contar con una velocidad real mínima. Si experimentas problemas en tu red, revisa nuestro artículo sobre <Link href="/blog/como-solucionar-buffering-cortes-iptv" className="text-white underline decoration-spanish-red/60 hover:text-spanish-redBright">solucionar problemas de buffering en IPTV</Link>.
         </p>

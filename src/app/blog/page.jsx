@@ -57,6 +57,10 @@ export default function BlogIndexPage() {
       {/* Featured Article Banner */}
       {selectedCat === 'Todos' && featuredArticle && (
         <div className="mb-16">
+          <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-6 flex items-center gap-2">
+            <BookOpen className="w-5 h-5 text-spanish-gold" />
+            <span>Guía IPTV Destacada</span>
+          </h2>
           <Link
             href={`/blog/${featuredArticle.slug}`}
             className="glass-card rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-spanish-red/40 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center group shadow-2xl overflow-hidden"
@@ -68,9 +72,9 @@ export default function BlogIndexPage() {
                 </span>
                 <span className="text-xs text-gray-400 font-semibold">{featuredArticle.category}</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white group-hover:text-spanish-gold transition-colors tracking-tight leading-snug">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-white group-hover:text-spanish-gold transition-colors tracking-tight leading-snug">
                 {featuredArticle.title}
-              </h2>
+              </h3>
               <p className="text-sm text-gray-300 leading-relaxed line-clamp-3">
                 {featuredArticle.excerpt}
               </p>
@@ -107,60 +111,65 @@ export default function BlogIndexPage() {
       )}
 
       {/* Articles Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-        {(selectedCat === 'Todos' ? regularArticles : filteredArticles).map((article) => (
-          <Link
-            key={article.slug}
-            href={`/blog/${article.slug}`}
-            className="glass-card glass-card-hover rounded-2xl overflow-hidden border border-white/5 hover:border-spanish-red/40 flex flex-col justify-between group"
-          >
-            <div>
-              {/* Article Card Thumbnail */}
-              {article.image && (
-                <div className="relative aspect-video w-full overflow-hidden bg-dark-900 border-b border-white/5">
-                  <Image
-                    src={article.image}
-                    alt={article.imageAlt || article.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute top-3 left-3">
-                    <span className="text-[11px] font-bold text-spanish-gold bg-dark-950/80 backdrop-blur-md px-2.5 py-1 rounded-md border border-spanish-gold/30">
-                      {article.category}
-                    </span>
+      <div className="mb-20">
+        <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-8">
+          {selectedCat === 'Todos' ? 'Todos los Artículos y Tutoriales IPTV' : `Artículos sobre ${selectedCat}`}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {(selectedCat === 'Todos' ? regularArticles : filteredArticles).map((article) => (
+            <Link
+              key={article.slug}
+              href={`/blog/${article.slug}`}
+              className="glass-card glass-card-hover rounded-2xl overflow-hidden border border-white/5 hover:border-spanish-red/40 flex flex-col justify-between group"
+            >
+              <div>
+                {/* Article Card Thumbnail */}
+                {article.image && (
+                  <div className="relative aspect-video w-full overflow-hidden bg-dark-900 border-b border-white/5">
+                    <Image
+                      src={article.image}
+                      alt={article.imageAlt || article.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-3 left-3">
+                      <span className="text-[11px] font-bold text-spanish-gold bg-dark-950/80 backdrop-blur-md px-2.5 py-1 rounded-md border border-spanish-gold/30">
+                        {article.category}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3 text-xs text-gray-500">
-                  <span>{article.date}</span>
-                  <span>{article.readTime}</span>
-                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-3 text-xs text-gray-500">
+                    <span>{article.date}</span>
+                    <span>{article.readTime}</span>
+                  </div>
 
-                <h2 className="text-lg font-bold text-white group-hover:text-spanish-gold transition-colors mb-3 tracking-tight line-clamp-2 leading-snug">
-                  {article.title}
-                </h2>
-                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed line-clamp-3 mb-2">
-                  {article.excerpt}
-                </p>
+                  <h3 className="text-lg font-bold text-white group-hover:text-spanish-gold transition-colors mb-3 tracking-tight line-clamp-2 leading-snug">
+                    {article.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed line-clamp-3 mb-2">
+                    {article.excerpt}
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="px-6 pb-6 pt-3 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
-              <span>{article.author}</span>
-              <span className="font-bold text-spanish-redBright group-hover:translate-x-1 transition-transform flex items-center gap-1">
-                <span>Leer más</span>
-                <ChevronRight className="w-4 h-4" />
-              </span>
-            </div>
-          </Link>
-        ))}
+              <div className="px-6 pb-6 pt-3 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+                <span>{article.author}</span>
+                <span className="font-bold text-spanish-redBright group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                  <span>Leer más</span>
+                  <ChevronRight className="w-4 h-4" />
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Blog Bottom Help Banner */}
       <div className="glass-card rounded-2xl p-6 sm:p-8 border border-white/10 text-center max-w-3xl mx-auto space-y-4">
-        <h3 className="text-xl font-bold text-white">¿Tienes alguna duda sobre qué app instalar o qué plan elegir?</h3>
+        <h2 className="text-xl font-bold text-white">¿Tienes alguna duda sobre qué app instalar o qué plan elegir?</h2>
         <p className="text-sm text-gray-300 leading-relaxed">
           Consulta nuestras <Link href="/faq" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">preguntas más frecuentes</Link>, revisa la compatibilidad de tus <Link href="/dispositivos" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">aparatos y Smart TV</Link> o escríbenos directamente a través de nuestro canal de <Link href="/contacto" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">atención y soporte 24/7</Link>.
         </p>
