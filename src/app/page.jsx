@@ -284,7 +284,50 @@ export default function HomePage() {
       </section>
 
       {/* ============================================================== */}
-      {/* 4. SPORTS & FOOTBALL SHOWCASE SECTION                          */}
+      {/* 4. PRICING PREVIEW SECTION                                     */}
+      {/* ============================================================== */}
+      <section id="planes" className="py-20 lg:py-28 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-spanish-gold">
+              Precios Transparentes
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Elige tu suscripción <span className="text-spanish-redBright">Reflexsat IPTV</span>
+            </h2>
+            <div className="w-24 h-1 spanish-flag-line mx-auto" />
+            <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+              Planes claros sin costes ocultos. Activación rápida en 5 minutos tras el pago seguro. Respaldados por nuestra <strong>garantía de reembolso de 7 días</strong>.
+            </p>
+          </div>
+
+          {/* Pricing Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+            {singleScreenPlans.map((plan) => (
+              <PricingCard key={plan.id} plan={plan} />
+            ))}
+          </div>
+
+          {/* Multi-screen CTA Link */}
+          <div className="mt-12 text-center">
+            <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-4 rounded-2xl bg-dark-800/80 border border-white/10 max-w-2xl mx-auto">
+              <div className="text-left text-sm">
+                <span className="font-bold text-white block">¿Quieres ver en varias televisiones a la vez?</span>
+                <span className="text-xs text-gray-400">Descubre nuestros Planes Familiares Multi-pantallas (2, 3 o 4 conexiones simultáneas).</span>
+              </div>
+              <Link
+                href="/planes"
+                className="px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-spanish-red hover:bg-spanish-redBright transition-colors whitespace-nowrap flex-shrink-0"
+              >
+                Ver planes multi-pantalla →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================== */}
+      {/* 5. SPORTS & FOOTBALL SHOWCASE SECTION                          */}
       {/* ============================================================== */}
       <section className="py-20 bg-dark-950 border-y border-white/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -355,49 +398,6 @@ export default function HomePage() {
                   <span className="text-spanish-gold font-bold">1080p 60fps / 4K UHD</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================================== */}
-      {/* 5. PRICING PREVIEW SECTION                                     */}
-      {/* ============================================================== */}
-      <section id="planes" className="py-20 lg:py-28 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-            <span className="text-xs font-extrabold uppercase tracking-widest text-spanish-gold">
-              Precios Transparentes
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Elige tu suscripción <span className="text-spanish-redBright">Reflexsat IPTV</span>
-            </h2>
-            <div className="w-24 h-1 spanish-flag-line mx-auto" />
-            <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Planes claros sin costes ocultos. Activación rápida en 5 minutos tras el pago seguro. Respaldados por nuestra <strong>garantía de reembolso de 7 días</strong>.
-            </p>
-          </div>
-
-          {/* Pricing Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
-            {singleScreenPlans.map((plan) => (
-              <PricingCard key={plan.id} plan={plan} />
-            ))}
-          </div>
-
-          {/* Multi-screen CTA Link */}
-          <div className="mt-12 text-center">
-            <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-4 rounded-2xl bg-dark-800/80 border border-white/10 max-w-2xl mx-auto">
-              <div className="text-left text-sm">
-                <span className="font-bold text-white block">¿Quieres ver en varias televisiones a la vez?</span>
-                <span className="text-xs text-gray-400">Descubre nuestros Planes Familiares Multi-pantallas (2, 3 o 4 conexiones simultáneas).</span>
-              </div>
-              <Link
-                href="/planes"
-                className="px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-spanish-red hover:bg-spanish-redBright transition-colors whitespace-nowrap flex-shrink-0"
-              >
-                Ver planes multi-pantalla →
-              </Link>
             </div>
           </div>
         </div>
