@@ -72,17 +72,30 @@ export default function HomePage() {
   return (
     <div className="overflow-hidden">
       {/* ============================================================== */}
-      {/* 1. HERO SECTION                                                */}
+      {/* 1. HERO SECTION WITH CINEMATIC TV BACKGROUND                   */}
       {/* ============================================================== */}
-      <section className="relative pt-6 pb-20 lg:pt-12 lg:pb-32 overflow-hidden">
-        {/* Glow ambient background effects */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-spanish-red/20 blur-[140px] pointer-events-none rounded-full" />
-        <div className="absolute top-1/3 left-1/3 w-[300px] h-[300px] bg-spanish-gold/15 blur-[120px] pointer-events-none rounded-full" />
+      <section className="relative min-h-[92vh] flex items-center justify-center pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        {/* Background Image Container */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero-tv.jpg"
+            alt="Reflexsat IPTV Fondo Smart TV España"
+            fill
+            priority
+            className="object-cover object-center brightness-[0.28] contrast-[1.1] scale-105"
+          />
+          {/* Multi-layer cinematic dark gradient overlay for optimal readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/75 to-dark-950/85" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark-950/90 via-transparent to-dark-950/90" />
+          {/* Ambient Spanish Flag Glows */}
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-spanish-red/25 blur-[160px] pointer-events-none rounded-full" />
+          <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[300px] bg-spanish-gold/15 blur-[140px] pointer-events-none rounded-full" />
+        </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="text-center max-w-4xl mx-auto space-y-6">
             {/* Live Indicator Badge */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-dark-800/80 border border-white/10 shadow-glass backdrop-blur-md">
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-dark-900/90 border border-white/15 shadow-glass backdrop-blur-md">
               <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse" />
               <span className="text-xs sm:text-sm font-semibold text-gray-200">
                 Activación garantizada en menos de 5 min — 7 días a la semana 🇪🇸
@@ -90,12 +103,12 @@ export default function HomePage() {
             </div>
 
             {/* H1 Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15] drop-shadow-md">
               Suscripción <span className="text-transparent bg-clip-text bg-gradient-to-r from-spanish-red via-spanish-redBright to-spanish-gold">IPTV Premium</span> en España
             </h1>
 
             {/* Subheading */}
-            <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed font-normal max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed font-normal max-w-3xl mx-auto drop-shadow">
               Accede a más de <strong>35.000 canales en directo en 4K / Full HD</strong> sin cortes ni buffering, junto a más de <strong>90.000 películas y series VOD</strong>. Todo el fútbol, deportes y entretenimiento en tu Smart TV, Fire Stick, Android o móvil.
             </p>
 
@@ -111,7 +124,7 @@ export default function HomePage() {
 
               <a
                 href="#como-funciona"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-dark-900/80 hover:bg-dark-800 backdrop-blur-md border border-white/15 hover:border-white/25 transition-all duration-200"
               >
                 <span>¿Cómo funciona?</span>
               </a>
@@ -119,26 +132,26 @@ export default function HomePage() {
 
             {/* Stats Row */}
             <div className="pt-6 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-              <div className="glass-card rounded-xl p-3.5 border border-white/5">
+              <div className="glass-card rounded-xl p-3.5 border border-white/10 backdrop-blur-md bg-dark-900/60">
                 <div className="text-2xl lg:text-3xl font-black text-white">+35.000</div>
-                <div className="text-xs text-gray-400 font-medium">Canales HD / 4K</div>
+                <div className="text-xs text-gray-300 font-medium">Canales HD / 4K</div>
               </div>
-              <div className="glass-card rounded-xl p-3.5 border border-white/5">
+              <div className="glass-card rounded-xl p-3.5 border border-white/10 backdrop-blur-md bg-dark-900/60">
                 <div className="text-2xl lg:text-3xl font-black text-white">+90.000</div>
-                <div className="text-xs text-gray-400 font-medium">Películas & Series VOD</div>
+                <div className="text-xs text-gray-300 font-medium">Películas & Series VOD</div>
               </div>
-              <div className="glass-card rounded-xl p-3.5 border border-white/5">
+              <div className="glass-card rounded-xl p-3.5 border border-white/10 backdrop-blur-md bg-dark-900/60">
                 <div className="text-2xl lg:text-3xl font-black text-spanish-gold">±5 min</div>
-                <div className="text-xs text-gray-400 font-medium">Activación exprés</div>
+                <div className="text-xs text-gray-300 font-medium">Activación exprés</div>
               </div>
-              <div className="glass-card rounded-xl p-3.5 border border-white/5">
+              <div className="glass-card rounded-xl p-3.5 border border-white/10 backdrop-blur-md bg-dark-900/60">
                 <div className="text-2xl lg:text-3xl font-black text-green-400">99.9%</div>
-                <div className="text-xs text-gray-400 font-medium">Servidores estables</div>
+                <div className="text-xs text-gray-300 font-medium">Servidores estables</div>
               </div>
             </div>
 
             {/* Trust Pill */}
-            <div className="pt-2 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-400">
+            <div className="pt-2 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-300 font-medium">
               <span className="flex items-center gap-1.5">
                 <Lock className="w-3.5 h-3.5 text-spanish-gold" /> Pago 100% Seguro SSL
               </span>
@@ -150,38 +163,6 @@ export default function HomePage() {
               <span className="flex items-center gap-1.5">
                 <Zap className="w-3.5 h-3.5 text-spanish-redBright" /> Servidores en España y Europa
               </span>
-            </div>
-          </div>
-
-          {/* Hero Feature Visual Showcase */}
-          <div className="mt-12 lg:mt-16 max-w-5xl mx-auto">
-            <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-dark-950 p-2 sm:p-3">
-              <div className="relative aspect-video w-full rounded-xl lg:rounded-2xl overflow-hidden">
-                <Image
-                  src="/images/hero-tv.jpg"
-                  alt="Reflexsat IPTV Smart TV experiencia de visualización en España"
-                  fill
-                  priority
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-950/80 via-transparent to-transparent" />
-                
-                {/* Overlay live badge */}
-                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex flex-wrap items-center justify-between gap-3 bg-dark-900/90 backdrop-blur-md p-3.5 sm:p-4 rounded-xl border border-white/10">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 rounded-full bg-red-500 animate-ping" />
-                    <div>
-                      <div className="text-xs font-bold text-white uppercase tracking-wider">LaLiga & Champions League 4K</div>
-                      <div className="text-xs text-gray-400">Transmisiones deportivas a 60 FPS sin cortes de señal</div>
-                    </div>
-                  </div>
-                  <div className="hidden sm:flex items-center gap-2">
-                    <span className="px-2.5 py-1 rounded-md bg-white/10 text-[11px] font-bold text-white">4K UHD</span>
-                    <span className="px-2.5 py-1 rounded-md bg-white/10 text-[11px] font-bold text-white">Dolby 5.1</span>
-                    <span className="px-2.5 py-1 rounded-md bg-spanish-red/20 text-[11px] font-bold text-spanish-redBright">Anti-Buffer</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
