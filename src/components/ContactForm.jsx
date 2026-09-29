@@ -4,12 +4,23 @@ import { useState } from 'react';
 import { Send, CheckCircle2, AlertCircle } from 'lucide-react';
 
 export default function ContactForm({ defaultPlan = '' }) {
+  const getInitialPlan = (p) => {
+    if (p === 'prueba-gratis' || p === 'prueba') return 'Solicitar prueba gratuita (Demo)';
+    if (p === '3-meses') return 'Plan 3 Meses (30 €)';
+    if (p === '6-meses') return 'Plan 6 Meses (45 €)';
+    if (p === '12-meses') return 'Plan 12 Meses (60 €)';
+    if (p === 'familiar-2') return 'Plan Familiar 2 Pantallas (79 €)';
+    if (p === 'familiar-3') return 'Plan Familiar 3 Pantallas (109 €)';
+    if (p === 'familiar-4') return 'Plan Familiar 4 Pantallas (139 €)';
+    return p || 'Plan 12 Meses (60 €)';
+  };
+
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
     telefono: '',
     dispositivo: 'Smart TV Samsung',
-    plan: defaultPlan || 'Plan 12 Meses (1 Pantalla)',
+    plan: getInitialPlan(defaultPlan),
     mensaje: '',
   });
 
@@ -125,6 +136,7 @@ export default function ContactForm({ defaultPlan = '' }) {
           onChange={(e) => setFormData({ ...formData, plan: e.target.value })}
           className="w-full px-4 py-3 rounded-xl bg-dark-900/90 border border-white/10 text-white text-sm focus:outline-none focus:border-spanish-red transition-colors"
         >
+          <option value="Solicitar prueba gratuita (Demo)">Solicitar prueba gratuita (Demo 24h)</option>
           <option value="Plan 3 Meses (30 €)">Plan 3 Meses (30,00 €)</option>
           <option value="Plan 6 Meses (45 €)">Plan 6 Meses (45,00 €)</option>
           <option value="Plan 12 Meses (60 €)">Plan 12 Meses — 1 Pantalla (60,00 €)</option>

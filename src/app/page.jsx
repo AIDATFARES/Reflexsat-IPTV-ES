@@ -122,12 +122,12 @@ export default function HomePage() {
                 <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
               </a>
 
-              <a
-                href="#como-funciona"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-dark-900/80 hover:bg-dark-800 backdrop-blur-md border border-white/15 hover:border-white/25 transition-all duration-200"
+              <Link
+                href="/contacto?plan=prueba-gratis"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-gray-200 bg-dark-900/80 hover:bg-dark-800 backdrop-blur-md border border-white/15 hover:border-spanish-gold/40 hover:text-white transition-all duration-200"
               >
-                <span>¿Cómo funciona?</span>
-              </a>
+                <span>Solicitar prueba gratis</span>
+              </Link>
             </div>
 
             {/* Stats Row */}
