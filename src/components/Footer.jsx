@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ShieldCheck, Zap, Headphones, Tv, Lock, CreditCard } from 'lucide-react';
+import { ShieldCheck, Zap, Headphones, Tv, Lock, CreditCard, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
