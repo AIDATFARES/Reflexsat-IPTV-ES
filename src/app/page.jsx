@@ -21,7 +21,7 @@ import FaqAccordion from '../components/FaqAccordion';
 import { allFaqs } from '../data/faqData';
 
 export const metadata = {
-  title: 'Reflexsat IPTV España — Suscripción IPTV Premium 4K / HD Estable',
+  title: 'Reflexsat IPTV, la Mejor Suscripción Premium de IPTV en España',
   description:
     'Suscripción IPTV en España con más de 35.000 canales en directo 4K, 120.000 VOD, deportes en vivo y servidores anti-buffering. Activación en 5 min. Prueba con 7 días de garantía.',
   alternates: {
@@ -103,7 +103,7 @@ export default function HomePage() {
 
             {/* H1 Main Heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15] drop-shadow-md">
-              Suscripción <span className="text-transparent bg-clip-text bg-gradient-to-r from-spanish-red via-spanish-redBright to-spanish-gold">IPTV Premium</span> en España
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-spanish-red via-spanish-redBright to-spanish-gold">Reflexsat IPTV</span>, la mejor suscripción premium de IPTV en España.
             </h1>
 
             {/* Subheading */}
