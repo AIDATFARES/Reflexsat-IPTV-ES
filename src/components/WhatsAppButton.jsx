@@ -14,7 +14,7 @@ export default function WhatsAppButton() {
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg shadow-[#25D366]/40 hover:scale-110 active:scale-95 transition-all duration-200 focus:outline-none relative"
-        aria-label="Contactar por WhatsApp (+44 7882 781998)"
+        aria-label="Contactar por WhatsApp con soporte técnico"
       >
         <span className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-spanish-gold rounded-full border-2 border-dark-900 animate-pulse" />
         <MessageCircle className="w-7 h-7 fill-current" />

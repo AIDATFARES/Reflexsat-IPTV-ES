@@ -386,7 +386,7 @@ La unión de la interfaz gráfica y potencia de procesamiento de <strong>TiviMat
 Con soporte para más de 35.000 canales en riguroso directo, emisiones deportivas a 60 fps sin retardo, más de 120.000 títulos en cine y series VOD en castellano y una guía EPG plenamente sincronizada, disfrutarás de la televisión con una calidad y comodidad técnica sin precedentes.
 </p>
 <p>
-Elige hoy el plan de suscripción que mejor encaje con tus hábitos en nuestra <a href="/planes">página de planes y tarifas Reflexsat</a>, o ponte en contacto directo con nuestro equipo a través de <a href="/contacto">WhatsApp (+447882781998)</a> para recibir asistencia técnica personalizada y una prueba guiada sin coste.
+Elige hoy el plan de suscripción que mejor encaje con tus hábitos en nuestra <a href="/planes">página de planes y tarifas Reflexsat</a>, o ponte en contacto directo con nuestro equipo a través de <a href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20asistencia%20tecnica" target="_blank" rel="noopener noreferrer">nuestro WhatsApp de asistencia 24/7</a> para recibir asesoramiento personalizado y una prueba guiada sin coste.
 </p>
 `
 };

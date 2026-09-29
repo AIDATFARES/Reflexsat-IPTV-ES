@@ -187,14 +187,15 @@ export default function Footer() {
                 <div className="text-spanish-gold font-medium">Menos de 10 minutos</div>
               </li>
               <li>
-                <div className="text-xs text-gray-500">WhatsApp oficial 24/7:</div>
+                <div className="text-xs text-gray-500">Canal de WhatsApp 24/7:</div>
                 <a
                   href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20m%C3%A1s%20informaci%C3%B3n"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-green-400 hover:text-green-300 font-semibold mt-1 font-mono text-sm"
+                  className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-semibold mt-1 text-sm group"
                 >
-                  <span>+44 7882 781998</span>
+                  <MessageCircle className="w-4 h-4 fill-current text-green-400" />
+                  <span className="underline decoration-green-400/50 group-hover:decoration-green-300">Abrir chat en directo →</span>
                 </a>
               </li>
               <li>

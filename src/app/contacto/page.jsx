@@ -105,7 +105,7 @@ export default function ContactoPage({ searchParams }) {
                     <span>Soporte por WhatsApp</span>
                     <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
                   </div>
-                  <div className="text-xs text-gray-300 font-mono mt-0.5">+44 7882 781998</div>
+                  <div className="text-xs text-gray-300 mt-0.5">Chat directo y asistencia en vivo 24/7</div>
                 </div>
               </div>
               <span className="text-xs font-bold text-[#25D366] bg-[#25D366]/10 border border-[#25D366]/20 px-3 py-1.5 rounded-lg group-hover:bg-[#25D366] group-hover:text-white transition-all">

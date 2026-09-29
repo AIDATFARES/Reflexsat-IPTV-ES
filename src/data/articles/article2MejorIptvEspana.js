@@ -73,7 +73,7 @@ Asimismo, la compatibilidad con pistas de audio multicanal en formato <strong>Do
 ¿De qué sirve contratar un servicio si cuando surge una duda de configuración nadie responde a tus mensajes o te atiende un bot automatizado en otro idioma tras varios días de espera? La excelencia en la atención posventa constituye la principal diferencia práctica entre un negocio formal y un revendedor anónimo.
 </p>
 <p>
-En Reflexsat, ofrecemos soporte técnico directo a través de <strong>WhatsApp (+447882781998)</strong> atendido en tiempo real por técnicos de habla hispana que te guiarán paso a paso en la instalación sobre cualquier modelo de Smart TV, Firestick o dispositivo móvil.
+En Reflexsat, ofrecemos soporte técnico directo a través de <strong>nuestro canal oficial de WhatsApp 24/7</strong> atendido en tiempo real por técnicos de habla hispana que te guiarán paso a paso en la instalación sobre cualquier modelo de Smart TV, Firestick o dispositivo móvil.
 </p>
 
 <h3>2.7. Garantía Real de Reembolso y Transparencia Comercial</h3>
