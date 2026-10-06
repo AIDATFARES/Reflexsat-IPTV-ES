@@ -4,7 +4,7 @@ import { Check, Flame, Shield, ArrowRight } from 'lucide-react';
 export default function PricingCard({ plan }) {
   const whatsappUrl = plan.ctaLink?.startsWith('https://wa.me/')
     ? plan.ctaLink
-    : `https://wa.me/447882781998?text=${encodeURIComponent(
+    : `https://wa.me/213552069874?text=${encodeURIComponent(
         `Hola Reflexsat IPTV, deseo contratar el ${plan.name} (${plan.devices} - ${plan.price}€).`
       )}`;
 

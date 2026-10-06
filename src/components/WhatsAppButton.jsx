@@ -10,7 +10,7 @@ export default function WhatsAppButton() {
         ¿Necesitas ayuda? Escríbenos 24/7
       </span>
       <a
-        href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio"
+        href="https://wa.me/213552069874?text=Hola%20Reflexsat%20IPTV,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio"
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg shadow-[#25D366]/40 hover:scale-110 active:scale-95 transition-all duration-200 focus:outline-none relative"

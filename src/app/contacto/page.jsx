@@ -90,7 +90,7 @@ export default function ContactoPage({ searchParams }) {
 
           {/* WhatsApp Direct Support Card */}
           <a
-            href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20asistencia%20inmediata"
+            href="https://wa.me/213552069874?text=Hola%20Reflexsat%20IPTV,%20deseo%20asistencia%20inmediata"
             target="_blank"
             rel="noopener noreferrer"
             className="block p-5 rounded-2xl bg-gradient-to-r from-[#25D366]/20 via-[#25D366]/10 to-transparent border border-[#25D366]/40 hover:border-[#25D366] transition-all group shadow-lg"

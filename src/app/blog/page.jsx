@@ -181,7 +181,7 @@ export default function BlogIndexPage() {
             Ver Planes de Suscripción →
           </Link>
           <a
-            href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20solicitar%20una%20prueba%20gratuita%20de%2024%20horas"
+            href="https://wa.me/213552069874?text=Hola%20Reflexsat%20IPTV,%20deseo%20solicitar%20una%20prueba%20gratuita%20de%2024%20horas"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-xl font-bold text-xs text-spanish-gold bg-spanish-gold/10 border border-spanish-gold/30 hover:bg-spanish-gold/20 transition-all"

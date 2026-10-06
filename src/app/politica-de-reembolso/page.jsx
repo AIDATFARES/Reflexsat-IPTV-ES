@@ -47,7 +47,7 @@ export default function PoliticaReembolsoPage() {
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-white">3. Procedimiento para Solicitar el Reembolso</h2>
             <p>
-              Para tramitar tu devolución, basta con ponerte en contacto con nuestro equipo a través de la página oficial de <Link href="/contacto" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">Contacto y Soporte</Link> o mediante <a href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20gestionar%20una%20solicitud%20de%20reembolso" target="_blank" rel="noopener noreferrer" className="text-spanish-gold font-semibold underline hover:text-spanish-redBright">nuestro canal directo de WhatsApp</a> indicando:
+              Para tramitar tu devolución, basta con ponerte en contacto con nuestro equipo a través de la página oficial de <Link href="/contacto" className="text-spanish-gold font-medium underline hover:text-spanish-redBright">Contacto y Soporte</Link> o mediante <a href="https://wa.me/213552069874?text=Hola%20Reflexsat%20IPTV,%20deseo%20gestionar%20una%20solicitud%20de%20reembolso" target="_blank" rel="noopener noreferrer" className="text-spanish-gold font-semibold underline hover:text-spanish-redBright">nuestro canal directo de WhatsApp</a> indicando:
             </p>
             <ul className="list-disc pl-5 space-y-1 text-gray-400">
               <li>Nombre completo y dirección de correo electrónico utilizada en el pedido.</li>

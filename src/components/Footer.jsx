@@ -189,7 +189,7 @@ export default function Footer() {
               <li>
                 <div className="text-xs text-gray-400">Canal de WhatsApp 24/7:</div>
                 <a
-                  href="https://wa.me/447882781998?text=Hola%20Reflexsat%20IPTV,%20deseo%20m%C3%A1s%20informaci%C3%B3n"
+                  href="https://wa.me/213552069874?text=Hola%20Reflexsat%20IPTV,%20deseo%20m%C3%A1s%20informaci%C3%B3n"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-semibold mt-1 text-sm group"
